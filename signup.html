@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Register Workspace</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .split-login-container {
+      display: flex !important;
+      flex-direction: row !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      box-sizing: border-box !important;
+      overflow: hidden !important;
+    }
+    .split-login-container > div:first-child {
+      flex: 0 0 55% !important;
+      width: 55% !important;
+      max-width: 55% !important;
+      height: 100% !important;
+      position: relative !important;
+      display: block !important;
+      overflow: hidden !important;
+    }
+    .login-form-wrapper {
+      flex: 0 0 45% !important;
+      width: 45% !important;
+      max-width: 45% !important;
+      background-color: var(--bg-primary, #fcfbfa) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 32px 48px !important;
+      position: relative !important;
+      height: 100% !important;
+      box-sizing: border-box !important;
+      overflow-y: auto !important;
+      z-index: 10 !important;
+    }
+    .login-glass-box {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+      z-index: 20 !important;
+      display: block !important;
+    }
+    @media(max-width: 1024px) {
+      body {
+        height: auto !important;
+        overflow: auto !important;
+      }
+      .split-login-container {
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        overflow: visible !important;
+      }
+      .split-login-container > div:first-child {
+        display: none !important;
+      }
+      .login-form-wrapper {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 40px 24px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        overflow: visible !important;
+      }
+      .login-glass-box {
+        margin: 0 auto !important;
+      }
+    }
+  </style>
+</head>
+<body style="height: 100vh; overflow: hidden; margin: 0;">
+
+  <!-- Custom Luxury Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Page Transition Curtain -->
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain">
+    <div class="curtain-panel">
+      <div class="curtain-loader">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="curtain-logo">
+        <div class="curtain-spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unique Split Layout Register View (No Footer) -->
+  <div class="split-login-container">
+    
+    <!-- Left side: image showcase -->
+    <div style="position:relative; overflow:hidden; background-color: var(--text-primary); height:100%;">
+      <img src="./assets/images/hero-bg.webp" alt="Luxurious Living Space" style="width:100%; height:100%; object-fit:cover; opacity:0.45; filter:brightness(0.85);">
+      <div style="position:absolute; bottom:60px; left:60px; right:60px; color:var(--bg-primary);" class="reveal reveal-left active">
+        <span class="hero-sub" style="color:var(--accent-gold);">CREATE ACCOUNT</span>
+        <h2 style="font-family: var(--font-heading); color: var(--bg-white); font-size:3.5rem; font-weight:300; line-height:1.2; text-transform:uppercase; margin-bottom:16px;">BEGIN YOUR DESIGN<br>JOURNEY TODAY.</h2>
+        <p style="font-size:0.9375rem; color:var(--text-light); max-width:480px; line-height:1.6;">Register to access your personalized client tracker dashboard, approve materials sourcing lists, and communicate with design directors.</p>
+      </div>
+    </div>
+
+    <!-- Right side: register card -->
+    <div class="login-form-wrapper">
+      
+      <!-- Back to Home Link -->
+      <a href="index.html" style="position:absolute; top:24px; right:24px; font-size:0.8125rem; font-weight:600; color:var(--text-secondary); text-transform:uppercase; letter-spacing:1px; display:flex; align-items:center; gap:6px;">
+        <span>← Back to Home</span>
+      </a>
+
+      <div class="login-glass-box reveal reveal-scale active" style="margin-bottom:0; width:100%; box-shadow:none; border:1px solid rgba(142,132,124,0.15); max-width: 425px; padding: 36px; background:var(--bg-white);">
+        <div style="text-align: center; margin-bottom: 20px;">
+          <div style="margin-bottom: 16px; display: flex; justify-content: center;">
+            <a href="index.html" style="display: block;"><img src="./assets/images/logo.webp" alt="Stackly Logo" style="height: 42px; width: auto; object-fit: contain; display: block; margin: 0 auto;"></a>
+          </div>
+          <h2 class="db-user-name" style="color: var(--text-primary); font-size:1.8rem;">Workspace Register</h2>
+          <p style="font-size: 0.75rem; color: var(--text-light); margin-top: 4px;">Sign up to establish your design project pipeline.</p>
+        </div>
+
+        <div id="registerSuccess" class="form-success-bar" style="display:none; padding:10px 14px; background-color:rgba(46,117,89,0.08); border-left:3px solid #2e7559; color:#2e7559; font-size:0.75rem; border-radius:var(--border-radius-sm); margin-bottom:16px; font-weight:600;"></div>
+        <div id="registerError" class="login-error-msg"></div>
+ 
+        <!-- Register Form -->
+        <form id="registerForm">
+          
+          <!-- Role Select Input -->
+          <div class="form-group" style="margin-bottom:14px;">
+            <select class="form-control" id="registerRole" required style="padding:10px 16px; background-color: var(--bg-white); color: var(--text-primary); appearance: none; -webkit-appearance: none; -moz-appearance: none;">
+              <option value="" disabled selected hidden>Select Role</option>
+              <option value="client">User / Client</option>
+              <option value="admin">Admin / Designer</option>
+            </select>
+            <label class="form-label" for="registerRole" style="top:-8px; left:12px; font-size:0.75rem; background-color:var(--bg-white); padding:0 6px; color:var(--accent-gold-dark); font-weight:600;">Account Workspace Role</label>
+            <span style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--accent-gold-dark); font-size: 0.75rem;">▼</span>
+          </div>
+
+          <div class="form-group" style="margin-bottom:14px;">
+            <input type="text" class="form-control" id="registerName" placeholder=" " required style="padding:10px 16px;">
+            <label class="form-label" for="registerName">Full Name</label>
+          </div>
+
+          <div class="form-group" style="margin-bottom:14px;">
+            <input type="email" class="form-control" id="registerEmail" placeholder=" " required style="padding:10px 16px;">
+            <label class="form-label" for="registerEmail">Email Address</label>
+          </div>
+ 
+          <div class="form-group" style="margin-bottom:14px; position:relative;">
+            <input type="password" class="form-control" id="registerPassword" placeholder=" " required style="padding:10px 40px 10px 16px; width: 100%; box-sizing: border-box;">
+            <label class="form-label" for="registerPassword">Password</label>
+            <button type="button" id="toggleRegisterPassword" style="position:absolute; right:12px; top:50%; transform:translateY(-50%); background:none; border:none; color:var(--text-light); cursor:pointer; padding:4px; display:flex; align-items:center; z-index:10;">
+              <i class="fa-solid fa-eye" id="eyeIconReg"></i>
+            </button>
+          </div>
+
+          <div class="form-group" style="margin-bottom:14px; position:relative;">
+            <input type="password" class="form-control" id="registerConfirm" placeholder=" " required style="padding:10px 40px 10px 16px; width: 100%; box-sizing: border-box;">
+            <label class="form-label" for="registerConfirm">Confirm Password</label>
+            <button type="button" id="toggleRegisterConfirm" style="position:absolute; right:12px; top:50%; transform:translateY(-50%); background:none; border:none; color:var(--text-light); cursor:pointer; padding:4px; display:flex; align-items:center; z-index:10;">
+              <i class="fa-solid fa-eye" id="eyeIconConf"></i>
+            </button>
+          </div>
+
+          <!-- Policy Agreement -->
+          <div style="margin-bottom:18px; display:flex; align-items:flex-start; gap:8px;">
+            <input type="checkbox" id="registerPolicy" style="margin-top:3px; accent-color:var(--accent-gold); cursor:pointer;" required>
+            <label for="registerPolicy" style="font-size:0.75rem; color:var(--text-secondary); line-height:1.4; cursor:pointer; user-select:none;">
+              I accept the <a href="#" onclick="alert('Viewing Studio Terms & Privacy Policy (Mock)...')" style="color:var(--accent-gold-dark); font-weight:600;">Terms of Curation</a> and consent to data storage inside the secure mock warehouse.
+            </label>
+          </div>
+ 
+          <button type="submit" class="btn btn-luxury" style="width: 100%; padding:10px; margin-bottom:14px;">
+            <span>Create Workspace</span>
+          </button>
+          
+          <div style="text-align:center; font-size:0.75rem; color:var(--text-light);">
+            Already have an account? <a href="login.html" style="color:var(--accent-gold-dark); font-weight:600; margin-left:4px;">Sign In</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module">
+    import db from './js/data.js';
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Sync login text (if logged in, redirect away automatically)
+      const user = db.getCurrentUser();
+      if (user) {
+        location.href = user.role === 'admin' ? "dashboard-admin.html" : "dashboard-user.html";
+        return;
+      }
+      const form = document.getElementById("registerForm");
+      const errorBox = document.getElementById("registerError");
+      const successBox = document.getElementById("registerSuccess");
+      
+      const roleInput = document.getElementById("registerRole");
+      const nameInput = document.getElementById("registerName");
+      const emailInput = document.getElementById("registerEmail");
+      const passwordInput = document.getElementById("registerPassword");
+      const confirmInput = document.getElementById("registerConfirm");
+      const policyInput = document.getElementById("registerPolicy");
+
+      // Password toggle eye listeners
+      const togglePassBtn = document.getElementById("toggleRegisterPassword");
+      const eyeIconReg = document.getElementById("eyeIconReg");
+      if (togglePassBtn && passwordInput && eyeIconReg) {
+        togglePassBtn.addEventListener("click", () => {
+          const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+          passwordInput.setAttribute("type", type);
+          if (type === "password") {
+            eyeIconReg.classList.remove("fa-eye-slash");
+            eyeIconReg.classList.add("fa-eye");
+          } else {
+            eyeIconReg.classList.remove("fa-eye");
+            eyeIconReg.classList.add("fa-eye-slash");
+          }
+        });
+      }
+
+      const toggleConfBtn = document.getElementById("toggleRegisterConfirm");
+      const eyeIconConf = document.getElementById("eyeIconConf");
+      if (toggleConfBtn && confirmInput && eyeIconConf) {
+        toggleConfBtn.addEventListener("click", () => {
+          const type = confirmInput.getAttribute("type") === "password" ? "text" : "password";
+          confirmInput.setAttribute("type", type);
+          if (type === "password") {
+            eyeIconConf.classList.remove("fa-eye-slash");
+            eyeIconConf.classList.add("fa-eye");
+          } else {
+            eyeIconConf.classList.remove("fa-eye");
+            eyeIconConf.classList.add("fa-eye-slash");
+          }
+        });
+      }
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        errorBox.style.display = "none";
+        successBox.style.display = "none";
+
+        const role = roleInput.value;
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const password = passwordInput.value.trim();
+        const confirm = confirmInput.value.trim();
+        const acceptPolicy = policyInput.checked;
+
+        // Custom validation rules that browser cannot handle:
+        if (password.length < 6) {
+          showError("Password must be at least 6 characters.");
+          return;
+        }
+
+        if (password !== confirm) {
+          showError("Passwords do not match.");
+          return;
+        }
+
+        const registered = db.register(name, email, password, role);
+        if (registered) {
+          successBox.textContent = "Registration successful! Redirecting to login...";
+          successBox.style.display = "block";
+          setTimeout(() => {
+            location.href = "login.html";
+          }, 1500);
+        } else {
+          showError("Email already registered. Use a different email address.");
+        }
+      });
+
+      function showError(msg) {
+        errorBox.textContent = msg;
+        errorBox.style.display = "block";
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+

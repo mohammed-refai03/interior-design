@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Login Workspace</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .split-login-container {
+      display: flex !important;
+      flex-direction: row !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      box-sizing: border-box !important;
+      overflow: hidden !important;
+    }
+    .split-login-container > div:first-child {
+      flex: 1 1 55% !important;
+      width: 55% !important;
+      max-width: 55% !important;
+      height: 100% !important;
+      position: relative !important;
+      display: block !important;
+      overflow: hidden !important;
+    }
+    .login-form-wrapper {
+      flex: 1 1 45% !important;
+      width: 45% !important;
+      min-width: 400px !important;
+      max-width: 100% !important;
+      background-color: var(--bg-primary, #fcfbfa) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 32px 48px !important;
+      position: relative !important;
+      height: 100% !important;
+      box-sizing: border-box !important;
+      overflow-y: auto !important;
+      z-index: 10 !important;
+    }
+    .login-glass-box {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+      z-index: 20 !important;
+      display: block !important;
+      width: 100% !important;
+      max-width: 420px !important;
+    }
+    
+    @media(max-width: 1024px) {
+      body {
+        height: auto !important;
+        overflow: auto !important;
+      }
+      .split-login-container {
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        overflow: visible !important;
+      }
+      .split-login-container > div:first-child {
+        display: none !important;
+      }
+      .login-form-wrapper {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 40px 24px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        overflow: visible !important;
+      }
+      .login-glass-box {
+        margin: 0 auto !important;
+      }
+    }
+  </style>
+</head>
+<body style="height: 100vh; overflow: hidden; margin: 0;">
+
+  <!-- Custom Luxury Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Page Transition Curtain -->
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain">
+    <div class="curtain-panel">
+      <div class="curtain-loader">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="curtain-logo">
+        <div class="curtain-spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unique Split Layout Login View (No Footer) -->
+  <div class="split-login-container">
+    
+    <!-- Left side: image showcase -->
+    <div style="position:relative; overflow:hidden; background-color: var(--text-primary); height:100%;">
+      <img src="./assets/images/hero-bg.webp" alt="Luxurious Living Space" style="width:100%; height:100%; object-fit:cover; opacity:0.45; filter:brightness(0.85);">
+      <div style="position:absolute; bottom:60px; left:60px; right:60px; color:var(--bg-primary);" class="reveal reveal-left active">
+        <span class="hero-sub" style="color:var(--accent-gold);">STUDIO PORTAL</span>
+        <h2 style="font-family: var(--font-heading); font-size:3.5rem; font-weight:300; line-height:1.2; text-transform:uppercase; margin-bottom:16px; color:var(--bg-white)">INSPIRED SPACES,<br>CRAFTED FOR LIVING.</h2>
+        <p style="font-size:0.9375rem; color:var(--text-light); max-width:480px; line-height:1.6;">Access your custom spatial blueprint charts, consult with designer committees, and track contract milestones online.</p>
+      </div>
+    </div>
+
+    <!-- Right side: login card -->
+    <div class="login-form-wrapper">
+      
+      <!-- Back to Home Link -->
+      <a href="index.html" style="position:absolute; top:24px; right:24px; font-size:0.8125rem; font-weight:600; color:var(--text-secondary); text-transform:uppercase; letter-spacing:1px; display:flex; align-items:center; gap:6px;">
+        <span>← Back to Home</span>
+      </a>
+
+      <div class="login-glass-box reveal reveal-scale active" style="margin-bottom:0; width:100%; box-shadow:none; border:1px solid rgba(142,132,124,0.15); max-width: 420px; padding: 40px; background:var(--bg-white);">
+        <div style="text-align: center; margin-bottom: 24px;">
+          <div style="margin-bottom: 16px; display: flex; justify-content: center;">
+            <a href="index.html" style="display: block;"><img src="./assets/images/logo.webp" alt="Stackly Logo" style="height: 42px; width: auto; object-fit: contain; display: block; margin: 0 auto;"></a>
+          </div>
+          <h2 class="db-user-name" style="color: var(--text-primary); font-size:1.8rem;">Workspace Sign In</h2>
+          <p style="font-size: 0.75rem; color: var(--text-light); margin-top: 4px;">Enter your client account details to review blueprints.</p>
+        </div>
+
+        <div id="loginError" class="login-error-msg"></div>
+
+
+
+        <!-- Login Form -->
+        <form id="loginForm">
+          <!-- Role Select Input -->
+          <div class="form-group" style="margin-bottom:16px;">
+            <select class="form-control" id="loginRole" required style="padding:12px 16px; background-color: var(--bg-white); color: var(--text-primary); appearance: none; -webkit-appearance: none; -moz-appearance: none;">
+              <option value="" disabled selected hidden>Select Role</option>
+              <option value="client">User / Client</option>
+              <option value="admin">Admin / Designer</option>
+            </select>
+            <label class="form-label" for="loginRole" style="top:-8px; left:12px; font-size:0.75rem; background-color:var(--bg-white); padding:0 6px; color:var(--accent-gold-dark); font-weight:600;">Account Workspace Role</label>
+            <span style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--accent-gold-dark); font-size: 0.75rem;">▼</span>
+          </div>
+
+          <div class="form-group" style="margin-bottom:16px;">
+            <input type="email" class="form-control" id="loginEmail" placeholder=" " required style="padding:12px 16px;">
+            <label class="form-label" for="loginEmail">Email Address</label>
+          </div>
+ 
+          <div class="form-group" style="margin-bottom:16px; position:relative;">
+            <input type="password" class="form-control" id="loginPassword" placeholder=" " required style="padding:12px 40px 12px 16px; width: 100%; box-sizing: border-box;">
+            <label class="form-label" for="loginPassword">Password</label>
+            <button type="button" id="togglePassword" style="position:absolute; right:12px; top:50%; transform:translateY(-50%); background:none; border:none; color:var(--text-light); cursor:pointer; padding:4px; display:flex; align-items:center; z-index:10;">
+              <i class="fa-solid fa-eye" id="eyeIcon"></i>
+            </button>
+          </div>
+
+          <!-- Remember Me & Forgot Password -->
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; font-size:0.75rem;">
+            <label style="display:flex; align-items:center; gap:6px; color:var(--text-secondary); cursor:pointer; user-select:none;">
+              <input type="checkbox" id="loginRemember" style="accent-color:var(--accent-gold); cursor:pointer;"> Remember Me
+            </label>
+            <a href="#" id="forgotPasswordLink" style="color:var(--accent-gold-dark); font-weight:600;">Forgot Password?</a>
+          </div>
+ 
+          <button type="submit" class="btn btn-luxury" style="width: 100%; padding:12px; margin-bottom:16px;">
+            <span>Enter Workspace</span>
+          </button>
+
+          <div style="text-align:center; font-size:0.75rem; color:var(--text-light);">
+            Don't have an account? <a href="signup.html" style="color:var(--accent-gold-dark); font-weight:600; margin-left:4px;">Register here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module">
+    import db from './js/data.js';
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Sync login text (if logged in, redirect away automatically)
+      const user = db.getCurrentUser();
+      if (user) {
+        location.href = user.role === 'admin' ? "dashboard-admin.html" : "dashboard-user.html";
+        return;
+      }
+ 
+      const form = document.getElementById("loginForm");
+      const emailInput = document.getElementById("loginEmail");
+      const passwordInput = document.getElementById("loginPassword");
+      const roleInput = document.getElementById("loginRole");
+      const rememberCheckbox = document.getElementById("loginRemember");
+      const forgotLink = document.getElementById("forgotPasswordLink");
+      const errorBox = document.getElementById("loginError");
+
+      const btnFillClient = document.getElementById("btnFillClient");
+      const btnFillAdmin = document.getElementById("btnFillAdmin");
+
+      if (btnFillClient) {
+        btnFillClient.addEventListener("click", () => {
+          emailInput.value = "client@stackly.com";
+          passwordInput.value = "client123";
+          roleInput.value = "client";
+          if (errorBox) errorBox.style.display = "none";
+        });
+      }
+
+      if (btnFillAdmin) {
+        btnFillAdmin.addEventListener("click", () => {
+          emailInput.value = "admin@stackly.com";
+          passwordInput.value = "admin123";
+          roleInput.value = "admin";
+          if (errorBox) errorBox.style.display = "none";
+        });
+      }
+
+      // Password toggle show/hide eye logic
+      const togglePasswordBtn = document.getElementById("togglePassword");
+      const eyeIcon = document.getElementById("eyeIcon");
+
+      if (togglePasswordBtn && passwordInput && eyeIcon) {
+        togglePasswordBtn.addEventListener("click", () => {
+          const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+          passwordInput.setAttribute("type", type);
+          if (type === "password") {
+            eyeIcon.classList.remove("fa-eye-slash");
+            eyeIcon.classList.add("fa-eye");
+          } else {
+            eyeIcon.classList.remove("fa-eye");
+            eyeIcon.classList.add("fa-eye-slash");
+          }
+        });
+      }
+
+      // Prefill remembered email
+      const rememberedEmail = localStorage.getItem('rememberedEmail');
+      if (rememberedEmail) {
+        emailInput.value = rememberedEmail;
+        rememberCheckbox.checked = true;
+      }
+
+      // Simulated forgot password
+      if (forgotLink) {
+        forgotLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          const email = emailInput.value.trim();
+          if (!email) {
+            alert("Please fill in your Email Address first, then click 'Forgot Password?' to receive reset simulation details.");
+            return;
+          }
+          alert(`Simulated Action: A password recovery link has been dispatched to ${email}.\n\nDefault credentials: client@stackly.com (client123) / admin@stackly.com (admin123)`);
+        });
+      }
+ 
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (errorBox) errorBox.style.display = "none";
+ 
+        const role = roleInput.value;
+        const email = emailInput.value.trim();
+        const password = passwordInput.value.trim();
+ 
+        const loggedUser = db.login(email, password, role);
+        if (loggedUser) {
+          // Save email if Remember Me checked
+          if (rememberCheckbox.checked) {
+            localStorage.setItem('rememberedEmail', email);
+          } else {
+            localStorage.removeItem('rememberedEmail');
+          }
+          location.href = loggedUser.role === 'admin' ? "dashboard-admin.html" : "dashboard-user.html";
+        } else {
+          if (errorBox) {
+            errorBox.textContent = "Invalid credentials or incorrect role selected.";
+            errorBox.style.display = "block";
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+

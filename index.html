@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Premium Interior Design & Architecture</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Stackly is a premium interior design and architecture studio. We turn your vision into inspired spaces and elevated living.">
+  <meta name="keywords" content="interior design, luxury architecture, space planning, home styling, 3D rendering, custom furniture, residential design">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+
+  <!-- Custom Luxury Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Page Transition Curtain -->
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain">
+    <div class="curtain-panel">
+      <div class="curtain-loader">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="curtain-logo">
+        <div class="curtain-spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar" id="mainNavbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="navLogo">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="logo-img">
+      </a>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="design.html" class="nav-link">Design</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="login.html" class="nav-btn btn-login" id="loginNavBtn">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!-- 9 CONTENT SECTIONS IN HOME PAGE            -->
+  <!-- ========================================== -->
+
+  <!-- SECTION 1: Hero Banner Section -->
+  <header class="hero-slider-section">
+    <div class="hero-bg-media">
+      <img src="./assets/images/image-new-11.webp" alt="Luxury Interior Space">
+    </div>
+    
+    <div class="container hero-content-overlay">
+      <div class="hero-title-container reveal reveal-left active">
+        <span class="hero-sub">STACKLY ATELIER</span>
+        <h1 class="hero-title">INSPIRED SPACES<br><span>ELEVATED LIVING.</span></h1>
+      </div>
+      <p class="hero-desc reveal reveal-left delay-1 active">We design refined interiors that blend comfort and style, creating spaces that feel inviting and functional while reflecting your personality with thoughtful details and timeless elegance.</p>
+      <div class="reveal reveal-left delay-2 active">
+        <a href="design.html" class="btn btn-luxury"><span>Explore Portfolio</span></a>
+      </div>
+    </div>
+  </header>
+
+ 
+
+  <!-- SECTION 3: About Studio Section -->
+  <section class="section-padding container">
+    <div class="about-intro-grid">
+      <div class="about-intro-media reveal reveal-left">
+        <img src="./assets/images/about-intro.webp" alt="Interior Design Commitments">
+      </div>
+      <div class="about-intro-content reveal reveal-right">
+        <span class="about-section-subtitle">ABOUT US</span>
+        <h2 class="about-section-title">WE'RE COMMITTED TO TURNING YOUR VISION INTO REALITY</h2>
+        <p class="about-intro-text">We believe spaces should be more than visually stunning—they must be highly functional and uniquely yours. Whether it's a private estate or a commercial project, our architectural and interior designs are engineered from details to deliver excellence.</p>
+        <p class="about-intro-text">Our artisans and project leaders handle everything from space planning and drafting layout options, through purchasing and construction supervision.</p>
+        
+        <div class="about-signature-block">
+          <svg viewBox="0 0 200 100" class="signature-svg">
+            <path d="M20,60 C40,40 60,70 80,30 C100,60 120,40 140,50 C160,60 180,20 190,50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <span class="signature-name">Marcus Aurelius</span>
+            <span class="signature-title">Principal Atelier Designer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Animated Stats Tickers Section -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid rgba(142, 132, 124, 0.15);">
+    <div class="container reveal reveal-up">
+      <div class="stats-counter-row" style="margin-top: 0; border-top: none; padding-top: 0;">
+        <div class="stat-item" data-value="12500">
+          <span class="stat-number" id="counter-hours">0+</span>
+          <span class="stat-label">Design Hours Completed</span>
+        </div>
+        <div class="stat-item" data-value="340">
+          <span class="stat-number" id="counter-clients">0+</span>
+          <span class="stat-label">Satisfied Clients</span>
+        </div>
+        <div class="stat-item" data-value="18">
+          <span class="stat-number" id="counter-awards">0+</span>
+          <span class="stat-label">Awards Winning</span>
+        </div>
+        <div class="stat-item" data-value="15">
+          <span class="stat-number" id="counter-years">0+</span>
+          <span class="stat-label">Years of Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Interactive Services Highlights Section -->
+  <section class="section-padding container">
+    <div style="text-align: center; margin-bottom: 60px;" class="reveal reveal-up">
+      <span class="about-section-subtitle">OUR SERVICES</span>
+      <h2 class="about-section-title">DESIGN SOLUTIONS MADE SIMPLE</h2>
+      <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">We craft refined interior spaces with thoughtful planning and detail, combining style and comfort to create functional environments.</p>
+    </div>
+    <div class="services-grid" id="homeServicesGrid">
+      <!-- Loading services markup dynamically or rendering static -->
+      <div class="card-luxury service-card reveal reveal-up">
+        <div class="service-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v16.5M21 3v16.5M6.75 6.75h10.5v10.5H6.75z" />
+          </svg>
+        </div>
+        <h3 class="service-card-title">Space Planning & Layout</h3>
+        <p class="service-card-desc">Optimizing the flow, functionality, and architectural layout of your interior spaces.</p>
+        <ul class="service-features-list">
+          <li>Acoustics & Lighting Layouts</li>
+          <li>Ergonomic Traffic Analysis</li>
+          <li>2D CAD Floor Plans</li>
+        </ul>
+        <a href="404.html" class="nav-btn btn-login" style="margin-top: auto; align-self: flex-start; font-size: 0.75rem;">Learn More</a>
+      </div>
+
+      <div class="card-luxury service-card reveal reveal-up delay-1">
+        <div class="service-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          </svg>
+        </div>
+        <h3 class="service-card-title">Residential Styling</h3>
+        <p class="service-card-desc">Bespoke interior decoration, furniture curation, and lighting design for premium homes.</p>
+        <ul class="service-features-list">
+          <li>Custom Furniture Curation</li>
+          <li>Material & Textile Selection</li>
+          <li>Color Palette Formulation</li>
+        </ul>
+        <a href="404.html" class="nav-btn btn-login" style="margin-top: auto; align-self: flex-start; font-size: 0.75rem;">Learn More</a>
+      </div>
+
+      <div class="card-luxury service-card reveal reveal-up delay-2">
+        <div class="service-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+          </svg>
+        </div>
+        <h3 class="service-card-title">Commercial & Retail Design</h3>
+        <p class="service-card-desc">Immersive interior brand experiences for offices, cafes, showrooms, and boutiques.</p>
+        <ul class="service-features-list">
+          <li>Retail Experience Planning</li>
+          <li>Brand Identity Alignment</li>
+          <li>Office Workspace Architecture</li>
+        </ul>
+        <a href="404.html" class="nav-btn btn-login" style="margin-top: auto; align-self: flex-start; font-size: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Featured Projects Slider Section -->
+  <section class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+        <span class="about-section-subtitle">PORTFOLIO EXCLUSIVES</span>
+        <h2 class="about-section-title">SIGNATURE RESIDENCES</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal reveal-up" onclick="location.href='design.html'">
+          <div class="project-card-image">
+            <img src="./assets/images/home-bedroom.webp" alt="Minimalist Bedroom">
+          </div>
+          <div class="project-overlay">
+            <h3 class="p-card-title">Minimalist Master Bedroom</h3>
+            <span class="p-card-cat">Residential - Completed</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-up delay-1" onclick="location.href='design.html'">
+          <div class="project-card-image">
+            <img src="./assets/images/home-livingroom.webp" alt="Mid-Century Villa">
+          </div>
+          <div class="project-overlay">
+            <h3 class="p-card-title">Mid-Century Modern Villa</h3>
+            <span class="p-card-cat">Residential - In Progress</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-up delay-2" onclick="location.href='design.html'">
+          <div class="project-card-image">
+            <img src="./assets/images/home-cafe.webp" alt="Espresso Cafe">
+          </div>
+          <div class="project-overlay">
+            <h3 class="p-card-title">The Golden Bean Cafe</h3>
+            <span class="p-card-cat">Commercial - Completed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- NEW SECTION A: Tactile Materials Curation -->
+  <section class="section-padding container">
+    <div style="text-align: center; margin-bottom: 60px;" class="reveal reveal-up">
+      <span class="about-section-subtitle">THE ART OF DETAIL</span>
+      <h2 class="about-section-title">TACTILE MATERIALS CURATION</h2>
+      <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">We source the finest organic finishes to build rich tactile landscapes inside neutral luxury residences.</p>
+    </div>
+    
+    <div class="materials-masonry-grid">
+      <!-- Material 1 -->
+      <div class="material-showcase-card reveal reveal-up" style="display:flex; flex-direction:column; gap:16px;">
+        <div style="position:relative; overflow:hidden; border-radius:var(--border-radius-md); height:280px; border:1px solid rgba(197,168,128,0.12);">
+          <img src="./assets/images/material-teak.webp" alt="Oiled Teak Wood" style="width:100%; height:100%; object-fit:cover; transition:transform 0.6s ease;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div>
+          <span style="font-size:0.6875rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">Timber Spec</span>
+          <h4 style="font-family:var(--font-heading); font-size:1.25rem; font-weight:400; margin-top:4px;">Oiled Burmese Teak</h4>
+        </div>
+      </div>
+      
+      <!-- Material 2 -->
+      <div class="material-showcase-card reveal reveal-up delay-1" style="display:flex; flex-direction:column; gap:16px;">
+        <div style="position:relative; overflow:hidden; border-radius:var(--border-radius-md); height:280px; border:1px solid rgba(197,168,128,0.12);">
+          <img src="./assets/images/material-marble.webp" alt="Calacatta Gold Marble" style="width:100%; height:100%; object-fit:cover; transition:transform 0.6s ease;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div>
+          <span style="font-size:0.6875rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">Stone Spec</span>
+          <h4 style="font-family:var(--font-heading); font-size:1.25rem; font-weight:400; margin-top:4px;">Calacatta Gold Slabs</h4>
+        </div>
+      </div>
+
+      <!-- Material 3 -->
+      <div class="material-showcase-card reveal reveal-up delay-2" style="display:flex; flex-direction:column; gap:16px;">
+        <div style="position:relative; overflow:hidden; border-radius:var(--border-radius-md); height:280px; border:1px solid rgba(197,168,128,0.12);">
+          <img src="./assets/images/image-new-6.webp" alt="Brushed Brass Hardware" style="width:100%; height:100%; object-fit:cover; transition:transform 0.6s ease;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div>
+          <span style="font-size:0.6875rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">Metal Finish</span>
+          <h4 style="font-family:var(--font-heading); font-size:1.25rem; font-weight:400; margin-top:4px;">Satin Brushed Brass</h4>
+        </div>
+      </div>
+
+      <!-- Material 4 -->
+      <div class="material-showcase-card reveal reveal-up delay-3" style="display:flex; flex-direction:column; gap:16px;">
+        <div style="position:relative; overflow:hidden; border-radius:var(--border-radius-md); height:280px; border:1px solid rgba(197,168,128,0.12);">
+          <img src="./assets/images/material-felt.webp" alt="High-Density Acoustic Felt" style="width:100%; height:100%; object-fit:cover; transition:transform 0.6s ease;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div>
+          <span style="font-size:0.6875rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">Acoustic Spec</span>
+          <h4 style="font-family:var(--font-heading); font-size:1.25rem; font-weight:400; margin-top:4px;">High-Density Acoustic Felt</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- NEW SECTION B: Creative Process Behind the Scenes -->
+  <section class="section-padding" style="background-color: var(--bg-primary); border-top:1px solid rgba(197,168,128,0.15); border-bottom:1px solid rgba(197,168,128,0.15);">
+    <div class="container">
+      <div class="about-intro-grid">
+        <!-- Left Side: Timeline -->
+        <div class="reveal reveal-left" style="display:flex; flex-direction:column; gap:24px;">
+          <span class="about-section-subtitle">CREATIVE TIMELINE</span>
+          <h2 class="about-section-title">THE ATELIER ROADMAP</h2>
+          <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.7;">Our process is rigorous, collaborative, and entirely transparent. We bridge the gap between creative drafts and functional structures using custom client portals.</p>
+          
+          <div style="display:flex; flex-direction:column; gap:20px; margin-top:12px;">
+            <div style="display:flex; gap:16px; align-items:start;">
+              <span style="background-color:var(--accent-gold-trans); color:var(--accent-gold-dark); font-weight:700; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:0.875rem;">01</span>
+              <div>
+                <h4 style="font-family:var(--font-heading); font-size:1.25rem; font-weight:600;">Spatial Floorplanning</h4>
+                <p style="font-size:0.8125rem; color:var(--text-light); margin-top:2px;">Drafting raw layouts and traffic pattern configurations.</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:16px; align-items:start;">
+              <span style="background-color:var(--accent-gold-trans); color:var(--accent-gold-dark); font-weight:700; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:0.875rem;">02</span>
+              <div>
+                <h4 style="font-family:var(--font-heading); font-size:1.25rem; font-weight:600;">Photorealistic 3D Renders</h4>
+                <p style="font-size:0.8125rem; color:var(--text-light); margin-top:2px;">Simulating material specular highlights and exact lighting loops.</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:16px; align-items:start;">
+              <span style="background-color:var(--accent-gold-trans); color:var(--accent-gold-dark); font-weight:700; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:0.875rem;">03</span>
+              <div>
+                <h4 style="font-family:var(--font-heading); font-size:1.25rem; font-weight:600;">On-Site Installation Logs</h4>
+                <p style="font-size:0.8125rem; color:var(--text-light); margin-top:2px;">Managing master carpenters, electrical engineers, and marble fitters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Overlapping Images Layout -->
+        <div class="reveal reveal-right" style="position:relative; height:440px; display:flex; align-items:center; justify-content:center;">
+          <!-- Main Large Image -->
+          <div style="width:75%; height:340px; border-radius:var(--border-radius-md); overflow:hidden; box-shadow:0 20px 40px rgba(0,0,0,0.12); border:1px solid rgba(197,168,128,0.15);">
+            <img src="./assets/images/before-livingroom.webp" alt="Concept Design Sketch" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <!-- Floating Overlapping Image -->
+          <div style="position:absolute; bottom:10px; right:10px; width:50%; height:180px; border-radius:var(--border-radius-md); overflow:hidden; box-shadow:0 15px 30px rgba(0,0,0,0.15); border:3px solid var(--bg-primary);">
+            <img src="./assets/images/after-livingroom.webp" alt="Finished Villa" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: Insights & Blog Preview -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid rgba(197,168,128,0.15);">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 50px;" class="reveal reveal-up">
+        <div>
+          <span class="about-section-subtitle">OUR JOURNAL</span>
+          <h2 class="about-section-title" style="margin-bottom: 0;">LATEST INSIGHTS</h2>
+        </div>
+        <a href="blog.html" class="nav-btn btn-cta" style="margin-bottom: 5px;">View All Articles →</a>
+      </div>
+
+      <div class="blog-preview-grid">
+        <!-- Card 1 -->
+        <div class="blog-preview-card reveal reveal-up" onclick="location.href='blog.html'">
+          <div class="blog-preview-img-wrap" style="position: relative; overflow: hidden; height: 240px; border-radius: var(--border-radius-sm);">
+            <img src="./assets/images/home-blog-textures.webp" alt="Layering Textures" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+            <span class="blog-preview-cat" style="position: absolute; top: 15px; left: 15px; background-color: var(--text-primary); color: var(--bg-white); padding: 4px 10px; font-size: 0.6875rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">Design Tips</span>
+          </div>
+          <div style="padding: 24px 0 0 0; display: flex; flex-direction: column; gap: 12px;">
+            <span class="blog-preview-date" style="font-size: 0.75rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 1px;">June 12, 2026</span>
+            <h3 class="blog-preview-title" style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 600; line-height: 1.3; color: var(--text-primary);">The Art of Layering Textures in Modern Interiors</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px;">Learn how to combine leather, boucle, metals, and raw oak to create rich visual depth in neutral rooms.</p>
+            <a href="404.html" style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--accent-gold-dark); display: inline-flex; align-items: center; gap: 4px; letter-spacing: 1px;">Read Article →</a>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="blog-preview-card reveal reveal-up delay-1" onclick="location.href='blog.html'">
+          <div class="blog-preview-img-wrap" style="position: relative; overflow: hidden; height: 240px; border-radius: var(--border-radius-sm);">
+            <img src="./assets/images/image-new-9.webp" alt="Sourcing Carrara Marble" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+            <span class="blog-preview-cat" style="position: absolute; top: 15px; left: 15px; background-color: var(--text-primary); color: var(--bg-white); padding: 4px 10px; font-size: 0.6875rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">Design Tips</span>
+          </div>
+          <div style="padding: 24px 0 0 0; display: flex; flex-direction: column; gap: 12px;">
+            <span class="blog-preview-date" style="font-size: 0.75rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 1px;">June 18, 2026</span>
+            <h3 class="blog-preview-title" style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 600; line-height: 1.3; color: var(--text-primary);">Sourcing Sustainable Stone: Carrara Curation</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px;">A deep dive into selecting and styling Italian marble slabs while maintaining environmental standards.</p>
+            <a href="404.html" style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--accent-gold-dark); display: inline-flex; align-items: center; gap: 4px; letter-spacing: 1px;">Read Article →</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="blog-preview-card reveal reveal-up delay-2" onclick="location.href='blog.html'">
+          <div class="blog-preview-img-wrap" style="position: relative; overflow: hidden; height: 240px; border-radius: var(--border-radius-sm);">
+            <img src="./assets/images/home-blog-theater.webp" alt="Home Theater Design" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+            <span class="blog-preview-cat" style="position: absolute; top: 15px; left: 15px; background-color: var(--text-primary); color: var(--bg-white); padding: 4px 10px; font-size: 0.6875rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">Space Planning</span>
+          </div>
+          <div style="padding: 24px 0 0 0; display: flex; flex-direction: column; gap: 12px;">
+            <span class="blog-preview-date" style="font-size: 0.75rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 1px;">April 15, 2026</span>
+            <h3 class="blog-preview-title" style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 600; line-height: 1.3; color: var(--text-primary);">The Acoustics of Sanctuary: Home Theater Design</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px;">How to apply bamboo diffusers and sound dampening felt to design an acoustically perfect home theater.</p>
+            <a href="404.html" style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--accent-gold-dark); display: inline-flex; align-items: center; gap: 4px; letter-spacing: 1px;">Read Article →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: Client Testimonials Carousel Section -->
+  <section class="section-padding testimonials-section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 40px;" class="reveal reveal-up">
+        <span class="about-section-subtitle">TESTIMONIALS</span>
+        <h2 class="about-section-title">WHAT CLIENTS SAY</h2>
+      </div>
+
+      <div class="testimonial-slider reveal reveal-scale">
+        <div class="testimonial-slide active">
+          <span class="quote-icon">“</span>
+          <p class="testimonial-quote">STACKLY transformed our outdated loft into a stunning, mid-century modern masterpiece. Their attention to detail, spacing, and styling of teak furniture blew us away. Highly professional throughout the process.</p>
+          <span class="testimonial-author">Eleanor Vance</span>
+          <span class="testimonial-role">Coastal Estate Owner</span>
+        </div>
+
+        <div class="testimonial-slide">
+          <span class="quote-icon">“</span>
+          <p class="testimonial-quote">The space planning for our showroom cafe was completed on time and well under budget. Marcus and his crew designed custom lighting loops that have become our trademark style online.</p>
+          <span class="testimonial-author">Aroma Hospitality</span>
+          <span class="testimonial-role">Commercial Cafe Founders</span>
+        </div>
+
+        <div class="testimonial-slide">
+          <span class="quote-icon">“</span>
+          <p class="testimonial-quote">Working with them was an absolute pleasure. Their user dashboard allowed us to view spatial drafts and approve design variations instantly from our phones. True luxury service!</p>
+          <span class="testimonial-author">John Smith</span>
+          <span class="testimonial-role">Urban Apartment Owner</span>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-arrow" id="prevTestimonial">←</button>
+          <button class="slider-arrow" id="nextTestimonial">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: Frequently Asked Questions -->
+  <section class="section-padding container">
+    <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+      <span class="about-section-subtitle">FAQ</span>
+      <h2 class="about-section-title">COMMON INQUIRIES</h2>
+      <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">Find answers to typical questions about our luxury design services, client collaboration, and project management process.</p>
+    </div>
+
+    <div class="faq-accordion-wrapper reveal reveal-up" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+      <!-- FAQ Item 1 -->
+      <div class="faq-item" style="border: 1px solid rgba(197, 168, 128, 0.15); border-radius: var(--border-radius-sm); background-color: var(--bg-white); transition: all 0.3s ease;">
+        <button class="faq-question" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 24px; font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; text-align: left; background: none; border: none; color: var(--text-primary); cursor: pointer;">
+          <span>How long does a luxury interior design project typically take?</span>
+          <span class="faq-icon" style="font-size: 1.25rem; font-weight: 300; transition: transform 0.3s ease;">+</span>
+        </button>
+        <div class="faq-answer-container" style="max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+          <p class="faq-answer" style="padding: 0 24px 24px 24px; font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+            A whole-home transformation typically takes 4 to 8 months. This timeline accounts for conceptual design sketches, 3D photorealistic renderings, material sourcing, structural approvals, custom carpentry fabrication, and final on-site installation. Smaller single-room styling projects can be completed in 6 to 10 weeks.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="faq-item" style="border: 1px solid rgba(197, 168, 128, 0.15); border-radius: var(--border-radius-sm); background-color: var(--bg-white); transition: all 0.3s ease;">
+        <button class="faq-question" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 24px; font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; text-align: left; background: none; border: none; color: var(--text-primary); cursor: pointer;">
+          <span>How do we collaborate on design drafts and material approvals?</span>
+          <span class="faq-icon" style="font-size: 1.25rem; font-weight: 300; transition: transform 0.3s ease;">+</span>
+        </button>
+        <div class="faq-answer-container" style="max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+          <p class="faq-answer" style="padding: 0 24px 24px 24px; font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+            We offer an immersive digital experience through our custom user dashboard. Clients can log in to view layout proposals, review 3D renders, track budget invoices, and download blueprints. You can approve or request changes on materials, color palettes, and furniture schedules directly from your phone.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="faq-item" style="border: 1px solid rgba(197, 168, 128, 0.15); border-radius: var(--border-radius-sm); background-color: var(--bg-white); transition: all 0.3s ease;">
+        <button class="faq-question" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 24px; font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; text-align: left; background: none; border: none; color: var(--text-primary); cursor: pointer;">
+          <span>Do you provide procurement and contractor management services?</span>
+          <span class="faq-icon" style="font-size: 1.25rem; font-weight: 300; transition: transform 0.3s ease;">+</span>
+        </button>
+        <div class="faq-answer-container" style="max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+          <p class="faq-answer" style="padding: 0 24px 24px 24px; font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+            Yes, we provide complete end-to-end procurement and construction supervision. We work with our trusted network of master craftsmen, carpenters, and contractors to execute designs flawlessly. We inspect joinery alignments, structural placements, and finishes on-site daily, so you do not have to worry about managing builders.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="faq-item" style="border: 1px solid rgba(197, 168, 128, 0.15); border-radius: var(--border-radius-sm); background-color: var(--bg-white); transition: all 0.3s ease;">
+        <button class="faq-question" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 24px; font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; text-align: left; background: none; border: none; color: var(--text-primary); cursor: pointer;">
+          <span>Can we request bespoke custom-made furniture?</span>
+          <span class="faq-icon" style="font-size: 1.25rem; font-weight: 300; transition: transform 0.3s ease;">+</span>
+        </button>
+        <div class="faq-answer-container" style="max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+          <p class="faq-answer" style="padding: 0 24px 24px 24px; font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+            Absolutely. Custom millwork and furniture design are the signature of Stackly. We design and build bespoke cabinetry, entertainment units, floating teak panel walls, and custom upholstered beds in our private Design District workshop, selecting timbers and metal trim to match your exact home concept.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo" style="margin-bottom: 20px;">
+          <a href="index.html" style="display: inline-block;"><img src="./assets/images/logo.webp" alt="Stackly Logo" class="logo-img"></a>
+        </div>
+        <p class="footer-desc">Crafting refined, bespoke interiors that blend functionality and modern aesthetics. Your vision, realized with timeless sophistication.</p>
+        <div class="social-links">
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="404.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="design.html">Design Portfolio</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Insights & Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Our Services</h4>
+        <ul>
+          <li><a href="services.html">Space Planning</a></li>
+          <li><a href="services.html">Residential Styling</a></li>
+          <li><a href="services.html">Commercial Interiors</a></li>
+          <li><a href="services.html">Furniture Curation</a></li>
+          <li><a href="services.html">Lighting & Acoustics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-title">Contact</h4>
+        <p class="contact-info" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; line-height: 1.4;">
+          <i class="fa-solid fa-map-pin" style="color: var(--accent-gold); margin-top: 3px;"></i>
+          <span>500 Luxury Lane, Design District<br>New York, NY 10013</span>
+        </p>
+        <p class="contact-info" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+          <i class="fa-solid fa-phone" style="color: var(--accent-gold); font-size: 0.85rem;"></i>
+          <span>+1 (212) 555-8900</span>
+        </p>
+        <p class="contact-info" style="display: flex; align-items: center; gap: 10px;">
+          <i class="fa-solid fa-envelope" style="color: var(--accent-gold); font-size: 0.85rem;"></i>
+          <a href="mailto:atelier@stackly.com" style="color: inherit; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='inherit'">atelier@stackly.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 STACKLY Atelier. All rights reserved. Premium Design Experience.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module">
+    // Stats and Testimonials specific logic for static HTML
+    import db from './js/data.js';
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Setup dynamic log button based on auth state
+      const user = db.getCurrentUser();
+      const loginBtn = document.getElementById("loginNavBtn");
+      if (loginBtn && user) {
+        loginBtn.textContent = "Dashboard";
+        loginBtn.setAttribute("href", user.role === 'admin' ? "dashboard-admin.html" : "dashboard-user.html");
+        loginBtn.classList.add("btn-cta");
+        loginBtn.classList.remove("btn-login");
+      }
+
+      // Column clicks
+      const columns = document.querySelectorAll(".hero-service-col");
+      columns.forEach(col => {
+        col.addEventListener("click", () => {
+          const target = col.getAttribute("data-target");
+          if (target) location.href = target;
+        });
+      });
+
+      // Stats Counters
+      const hoursEl = document.getElementById("counter-hours");
+      const clientsEl = document.getElementById("counter-clients");
+      const awardsEl = document.getElementById("counter-awards");
+      const yearsEl = document.getElementById("counter-years");
+
+      const animateNumber = (element, targetValue, duration) => {
+        if (!element) return;
+        let startValue = 0;
+        const stepTime = Math.abs(Math.floor(duration / targetValue));
+        const finalStep = Math.max(stepTime, 10);
+        const increment = Math.ceil(targetValue / (duration / finalStep));
+
+        const timer = setInterval(() => {
+          startValue += increment;
+          if (startValue >= targetValue) {
+            element.textContent = targetValue.toLocaleString() + "+";
+            clearInterval(timer);
+          } else {
+            element.textContent = startValue.toLocaleString() + "+";
+          }
+        }, finalStep);
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateNumber(hoursEl, 12500, 2000);
+            animateNumber(clientsEl, 340, 1500);
+            animateNumber(awardsEl, 18, 1000);
+            animateNumber(yearsEl, 15, 1000);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      const statsRow = document.querySelector(".stats-counter-row");
+      if (statsRow) observer.observe(statsRow);
+
+      // Slider logic
+      const slides = document.querySelectorAll(".testimonial-slide");
+      const prevBtn = document.getElementById("prevTestimonial");
+      const nextBtn = document.getElementById("nextTestimonial");
+      if (slides.length && prevBtn && nextBtn) {
+        let currentIndex = 0;
+        const showSlide = (index) => {
+          slides.forEach(slide => slide.classList.remove("active"));
+          slides[index].classList.add("active");
+        };
+        prevBtn.addEventListener("click", () => {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          showSlide(currentIndex);
+        });
+        nextBtn.addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+        });
+      }
+
+      // Video Mockup Interaction
+      const videoWrapper = document.querySelector(".video-mockup-wrapper");
+      if (videoWrapper) {
+        videoWrapper.addEventListener("mouseenter", () => {
+          const play = videoWrapper.querySelector(".play-btn-circle");
+          if (play) play.style.transform = "scale(1.15) rotate(360deg)";
+        });
+        videoWrapper.addEventListener("mouseleave", () => {
+          const play = videoWrapper.querySelector(".play-btn-circle");
+          if (play) play.style.transform = "none";
+        });
+        videoWrapper.addEventListener("click", () => {
+          alert("Playing interactive walkthrough tour...");
+        });
+      }
+
+      // Newsletter
+      const form = document.getElementById("newsletterForm");
+      const msg = document.getElementById("newsMsg");
+      if (form && msg) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          form.style.display = "none";
+          msg.style.display = "block";
+        });
+      }
+
+      // FAQ Accordion Toggling
+      const faqQuestions = document.querySelectorAll(".faq-question");
+      faqQuestions.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          const answerContainer = item.querySelector(".faq-answer-container");
+          const icon = btn.querySelector(".faq-icon");
+          
+          const isOpen = item.classList.contains("active");
+          
+          // Close all other FAQ items first
+          document.querySelectorAll(".faq-item").forEach(faq => {
+            faq.classList.remove("active");
+            faq.querySelector(".faq-answer-container").style.maxHeight = "0px";
+            faq.querySelector(".faq-icon").textContent = "+";
+            faq.querySelector(".faq-icon").style.transform = "none";
+          });
+          
+          if (!isOpen) {
+            item.classList.add("active");
+            answerContainer.style.maxHeight = answerContainer.scrollHeight + "px";
+            icon.textContent = "−";
+            icon.style.transform = "rotate(180deg)";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+

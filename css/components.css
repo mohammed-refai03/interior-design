@@ -1,0 +1,678 @@
+/* ==========================================================================
+   STACKLY COMPONENT STYLES (components.css)
+   ========================================================================== */
+
+/* ==========================================================================
+   Header Navigation Bar
+   ========================================================================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1000;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(197, 168, 128, 0.08);
+  transition: var(--transition-smooth);
+}
+
+.navbar.scrolled {
+  background-color: rgba(252, 251, 250, 0.95);
+  backdrop-filter: blur(12px);
+  height: 80px;
+  box-shadow: 0 10px 30px rgba(30, 26, 23, 0.03);
+  border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+/* Transparent Navbar Link/Toggle Contrast Overrides */
+.navbar:not(.scrolled) .nav-link {
+  color: rgba(252, 251, 250, 0.9) !important;
+}
+
+.navbar:not(.scrolled) .nav-link:hover {
+  color: var(--accent-gold) !important;
+}
+
+.navbar:not(.scrolled) .nav-link.active {
+  color: var(--accent-gold) !important;
+}
+
+.navbar:not(.scrolled) .btn-login {
+  color: rgba(252, 251, 250, 0.9) !important;
+  border-color: rgba(252, 251, 250, 0.4) !important;
+}
+
+.navbar:not(.scrolled) .btn-login:hover {
+  color: var(--text-primary) !important;
+  border-color: var(--accent-gold) !important;
+  background-color: var(--accent-gold) !important;
+}
+
+.navbar:not(.scrolled) .nav-toggle .bar {
+  background-color: rgba(252, 251, 250, 0.9) !important;
+}
+
+.nav-container {
+  max-width: var(--container-width);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.logo-svg {
+  width: 32px;
+  height: 32px;
+  color: var(--accent-gold);
+  transition: var(--transition-bounce);
+}
+
+.nav-logo:hover .logo-svg {
+  transform: rotate(180deg);
+  color: var(--text-primary);
+}
+
+.logo-img {
+  height: 42px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  transition: var(--transition-bounce);
+}
+
+.nav-logo:hover .logo-img {
+  transform: scale(1.08);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-gold);
+  transition: var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Toggle Hamburger Menu (Mobile Only) */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.nav-toggle .bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: var(--transition-fast);
+}
+
+/* Responsive Header */
+@media (max-width: 992px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 320px;
+    height: 100vh;
+    background-color: var(--bg-primary);
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.05);
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 40px;
+    transition: var(--transition-smooth);
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  /* Override transparent navbar styles when mobile menu is open so links are visible */
+  .navbar .nav-menu.open .nav-link {
+    color: var(--text-secondary) !important;
+  }
+
+  .navbar .nav-menu.open .nav-link.active,
+  .navbar .nav-menu.open .nav-link:hover {
+    color: var(--text-primary) !important;
+  }
+
+  .navbar .nav-menu.open .btn-login {
+    color: var(--text-primary) !important;
+    border-color: rgba(197, 168, 128, 0.5) !important;
+  }
+
+  /* Make sure the hamburger 'X' is visible when menu is open */
+  .navbar .nav-toggle.active .bar {
+    background-color: var(--text-primary) !important;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1.125rem;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .nav-actions .nav-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   Luxury Custom Buttons
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  padding: 16px 36px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-gold);
+  border-radius: var(--border-radius-sm);
+  background: transparent;
+  color: var(--text-primary);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: var(--transition-smooth);
+}
+
+.btn-luxury {
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+.btn-luxury span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-luxury::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-gold);
+  transition: var(--transition-smooth);
+  z-index: 1;
+}
+
+.btn-luxury:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-gold);
+}
+
+.btn-luxury:hover::before {
+  left: 0;
+}
+
+/* Hero section button contrast enhancements */
+.hero-slider-section .btn-luxury {
+  color: var(--text-white);
+  border-color: rgba(252, 251, 250, 0.4);
+}
+.hero-slider-section .btn-luxury:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-gold);
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 1px;
+}
+
+.btn-login {
+  border: 1px solid rgba(197, 168, 128, 0.5);
+  color: var(--text-primary);
+}
+
+.btn-login:hover {
+  border-color: var(--text-primary);
+}
+
+.btn-cta {
+  background-color: var(--accent-gold);
+  color: var(--text-white) !important;
+  border: 1px solid var(--accent-gold);
+}
+
+.btn-cta:hover {
+  background-color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Luxury Cards
+   ========================================================================== */
+.card-luxury {
+  background-color: var(--bg-white);
+  border: 1px solid rgba(197, 168, 128, 0.15);
+  border-radius: var(--border-radius-md);
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(30, 26, 23, 0.02);
+  transition: var(--transition-smooth);
+}
+
+.card-luxury:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(30, 26, 23, 0.06);
+  border-color: var(--accent-gold);
+}
+
+/* ==========================================================================
+   Shared Footer
+   ========================================================================== */
+.footer {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  padding: 80px 0 30px 0;
+  border-top: 1px solid rgba(197, 168, 128, 0.1);
+}
+
+.footer-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 60px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: var(--bg-primary);
+}
+
+.footer-desc {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-links a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(252, 251, 250, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--bg-primary);
+  transition: var(--transition-fast);
+}
+
+.social-links a:hover {
+  background-color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  transform: scale(1.1);
+}
+
+.footer-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--bg-primary);
+  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 1px;
+  background-color: var(--accent-gold);
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.footer-links a:hover {
+  color: var(--accent-gold);
+  padding-left: 4px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-info {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  max-width: var(--container-width);
+  margin: 60px auto 0 auto;
+  padding: 30px 24px 0 24px;
+  border-top: 1px solid rgba(252, 251, 250, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   Interactive Form Controls (Floating Labels)
+   ========================================================================== */
+.form-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid rgba(142, 130, 122, 0.25);
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  border-radius: var(--border-radius-sm);
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.form-control:focus {
+  border-color: var(--accent-gold);
+  background: rgba(252, 251, 250, 0.3);
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  font-size: 0.875rem;
+  color: var(--text-light);
+  pointer-events: none;
+  transition: var(--transition-fast);
+}
+
+textarea.form-control ~ .form-label {
+  top: 16px;
+  transform: none;
+}
+
+/* Input placeholder handling for floating labels */
+.form-control:focus ~ .form-label,
+.form-control:not(:placeholder-shown) ~ .form-label,
+.form-control:-webkit-autofill ~ .form-label {
+  top: -8px;
+  transform: translateY(0);
+  left: 12px;
+  font-size: 0.75rem;
+  background-color: var(--form-label-bg, var(--bg-primary));
+  padding: 0 6px;
+  color: var(--accent-gold-dark);
+  font-weight: 600;
+}
+
+.login-glass-box {
+  --form-label-bg: var(--bg-white);
+}
+
+textarea.form-control {
+  min-height: 100px;
+}
+
+/* ==========================================================================
+   Badges
+   ========================================================================== */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.badge.success {
+  background-color: rgba(46, 117, 89, 0.12);
+  color: #2e7559;
+}
+
+.badge.pending {
+  background-color: rgba(176, 120, 50, 0.12);
+  color: #b07832;
+}
+
+.badge.info {
+  background-color: var(--accent-gold-trans);
+  color: var(--accent-gold-dark);
+}
+
+/* ==========================================================================
+   Page Hero Banner Section
+   ========================================================================== */
+.page-hero-banner {
+  position: relative;
+  background-color: var(--text-primary);
+  padding: 100px 0 80px 0;
+  margin-top: var(--header-height);
+  overflow: hidden;
+  border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+  text-align: center;
+  color: var(--bg-primary);
+}
+@media(max-width: 768px) {
+  .page-hero-banner {
+    padding: 60px 0 40px 0;
+  }
+}
+
+.page-hero-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.page-hero-banner-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  filter: brightness(0.7) contrast(1.1) grayscale(30%);
+}
+
+.page-hero-banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.page-hero-breadcrumbs {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-gold);
+  margin-bottom: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-hero-breadcrumbs a {
+  color: rgba(252, 251, 250, 0.7);
+  transition: var(--transition-fast);
+}
+
+.page-hero-breadcrumbs a:hover {
+  color: var(--accent-gold);
+}
+
+.page-hero-breadcrumbs span.separator {
+  color: rgba(197, 168, 128, 0.5);
+}
+
+.page-hero-title {
+  font-family: var(--font-heading);
+  font-size: 3.25rem;
+  color: var(--bg-primary);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.page-hero-desc {
+  font-size: 0.9375rem;
+  color: rgba(252, 251, 250, 0.85);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* MS Edge default password reveal icons overrides */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Design Portfolio</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+
+  <!-- Custom Luxury Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Page Transition Curtain -->
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain">
+    <div class="curtain-panel">
+      <div class="curtain-loader">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="curtain-logo">
+        <div class="curtain-spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar scrolled" id="mainNavbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="navLogo">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="logo-img">
+      </a>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="design.html" class="nav-link active">Design</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="login.html" class="nav-btn btn-login" id="loginNavBtn">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!-- 6 CONTENT SECTIONS IN DESIGN PAGE          -->
+  <!-- ========================================== -->
+
+  <!-- SECTION 1: Design Hero Banner Section -->
+  <section class="page-hero-banner reveal reveal-up active">
+    <div class="page-hero-banner-bg">
+      <img src="./assets/images/design-bg.webp" alt="Design Portfolio Background">
+    </div>
+    <div class="page-hero-banner-content">
+      <div class="page-hero-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span>Design</span>
+      </div>
+      <h1 class="page-hero-title">Creative Visualisations</h1>
+      <p class="page-hero-desc">Witness how our designers orchestrate spaces, combining textures and materials into timeless environments.</p>
+    </div>
+  </section>
+
+  
+
+  <!-- SECTION 3: Project Portfolio Grid Section -->
+  <section class="container" style="padding-bottom: 80px; margin-top: 60px;">
+    <div style="text-align: center; margin-bottom: 40px;" class="reveal reveal-up">
+      <span class="about-section-subtitle">PROJECT PORTFOLIO</span>
+      <h2 class="about-section-title">BESPOKE COLLECTION</h2>
+    </div>
+
+    <!-- Filters & Sort Actions -->
+    <div class="reveal reveal-up" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 40px; border-bottom: 1px solid rgba(197, 168, 128, 0.15); padding-bottom: 24px;">
+      
+      <!-- Category Tabs (left side) -->
+      <div class="portfolio-filters" style="margin-bottom: 0; padding-bottom: 0; border: none; display: flex; gap: 10px;">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+      </div>
+
+      <!-- Search, Sort & Status (right side) -->
+      <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+        <!-- Search Input -->
+        <div style="position: relative; display: flex; align-items: center;">
+          <input type="text" id="projectSearchInput" placeholder="Search collection..." style="padding: 10px 16px 10px 38px; border-radius: 4px; border: 1px solid rgba(197, 168, 128, 0.25); background: var(--bg-white); font-size: 0.8125rem; color: var(--text-primary); outline: none; font-family: var(--font-body); width: 200px; transition: border-color 0.3s;" onfocus="this.style.borderColor='var(--accent-gold)'" onblur="this.style.borderColor='rgba(197, 168, 128, 0.25)'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px; color: var(--text-light); position: absolute; left: 14px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+
+        <!-- Status Filter -->
+        <select id="projectStatusSelect" style="padding: 10px 16px; border-radius: 4px; border: 1px solid rgba(197, 168, 128, 0.25); background: var(--bg-white); font-size: 0.8125rem; color: var(--text-primary); outline: none; font-family: var(--font-body); cursor: pointer;">
+          <option value="all">All Statuses</option>
+          <option value="completed">Completed</option>
+          <option value="in progress">In Progress</option>
+        </select>
+
+        <!-- Sort Select -->
+        <select id="projectSortSelect" style="padding: 10px 16px; border-radius: 4px; border: 1px solid rgba(197, 168, 128, 0.25); background: var(--bg-white); font-size: 0.8125rem; color: var(--text-primary); outline: none; font-family: var(--font-body); cursor: pointer;">
+          <option value="default">Default Sort</option>
+          <option value="budget-desc">Budget: High to Low</option>
+          <option value="budget-asc">Budget: Low to High</option>
+          <option value="date-desc">Date: Newest First</option>
+          <option value="date-asc">Date: Oldest First</option>
+          <option value="name-asc">Name: A to Z</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Project 12 -->
+      <div class="project-card reveal reveal-up delay-2" data-category="commercial" data-id="project-12">
+        <div class="project-card-image">
+          <img src="./assets/images/image-new-12.webp" alt="Soho Loft Workspace">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Soho Loft Workspace</h3>
+              <span class="p-card-cat">Commercial - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Apex Creative Agency</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $140,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> June 15, 2026</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">A modular, open-concept creative office styling showcasing steel frame doors, high-density acoustic partition screens, and custom task spotlight rings.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 11 -->
+      <div class="project-card reveal reveal-up delay-1" data-category="residential" data-id="project-11">
+        <div class="project-card-image">
+          <img src="./assets/images/project-zen-conservatory.webp" alt="Zen Garden Conservatory">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Zen Garden Conservatory</h3>
+              <span class="p-card-cat">Residential - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Arthur & Maya Dent</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $55,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> April 05, 2026</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">An extension conservatory featuring triple-glazed biophilic glass panels, micro-climate soil beds, and custom-milled white oak architectural frame trusses.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 10 -->
+      <div class="project-card reveal reveal-up" data-category="commercial" data-id="project-10">
+        <div class="project-card-image">
+          <img src="./assets/images/project-terrazzo-spa.webp" alt="The Terrazzo Spa Suite">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">The Terrazzo Spa Suite</h3>
+              <span class="p-card-cat">Commercial - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Soma Wellness Corp</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $75,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> January 10, 2026</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">A private spa bathroom suite incorporating golden-veined terrazzo tile floors, custom teak storage panels, and vapor-proof ambient LED loops.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="project-card reveal reveal-up delay-2" data-category="commercial" data-id="project-9">
+        <div class="project-card-image">
+          <img src="./assets/images/image-new-4.webp" alt="Symphony Concert Studio">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Symphony Concert Studio</h3>
+              <span class="p-card-cat">Commercial - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Orchestra Trust</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $180,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> March 24, 2026</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">A state-of-the-art acoustic rehearsal studio designed for orchestral fidelity, integrating walnut wood diffusors and micro-perforated acoustic panel arrays.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="project-card reveal reveal-up delay-1" data-category="commercial" data-id="project-8">
+        <div class="project-card-image">
+          <img src="./assets/images/image-new-5.webp" alt="Listening Lounge">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Serenade Acoustic Lounge</h3>
+              <span class="p-card-cat">Commercial - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Binaural Records</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $95,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> January 14, 2026</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">A private high-fidelity listening lounge featuring acoustic soundproofing, bespoke walnut wood acoustic diffuser arrays, luxury velvet seating layouts, and low-glare ambient lighting designs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="project-card reveal reveal-up" data-category="residential" data-id="project-7">
+        <div class="project-card-image">
+          <img src="./assets/images/image-new-13.webp" alt="Biophilic Smart Residence">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Verdant Biophilic Residence</h3>
+              <span class="p-card-cat">Residential - In Progress</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Oliver & Clara Finch</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $145,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> August 10, 2026 (Est.)</div>
+              <div class="p-detail-item"><strong>Status:</strong> In Progress</div>
+            </div>
+            <p class="p-card-summary">An eco-conscious smart home emphasizing biophilic layouts, indoor plant walls, local slate finishes, solar lighting loops, and an integrated central open atrium for natural ventilation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card reveal reveal-up delay-2" data-category="commercial" data-id="project-6">
+        <div class="project-card-image">
+          <img src="./assets/images/hero-bg.webp" alt="Wellness Spa">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Lumina Wellness Sanctuary</h3>
+              <span class="p-card-cat">Commercial - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Soma Wellness Corp</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $310,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> December 20, 2025</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">A state-of-the-art sensory relaxation spa environment focusing on organic curves, acoustic panel dampening, indirect warm illumination, and custom cedar-cladded relaxation capsules.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card reveal reveal-up delay-1" data-category="residential" data-id="project-5">
+        <div class="project-card-image">
+          <img src="./assets/images/hero-col-2.webp" alt="Penthouse Loft">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Aetheria Penthouse Loft</h3>
+              <span class="p-card-cat">Residential - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Dorian Sterling</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $185,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> March 15, 2026</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">A luxury high-rise penthouse loft combining industrial brick accents with sleek modern walnut cabinetry, polished concrete floors, and double-height ceiling voids for maximum spatial depth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card reveal reveal-up" data-category="commercial" data-id="project-4">
+        <div class="project-card-image">
+          <img src="./assets/images/portfolio-cafe.webp" alt="Espresso Bar">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">The Golden Bean Cafe</h3>
+              <span class="p-card-cat">Commercial - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Aroma Hospitality</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $65,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> June 02, 2026</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">A boutique commercial espresso bar highlighting custom brass wireframe details, raw concrete walls, and warm ambient spotlights designed to curate a luxury coffee lounge vibe.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal reveal-up delay-2" data-category="commercial" data-id="project-3">
+        <div class="project-card-image">
+          <img src="./assets/images/image-new-8.webp" alt="Corporate Office">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Vanguard Corporate Hub</h3>
+              <span class="p-card-cat">Commercial - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Vanguard Corp</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $250,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> April 18, 2026</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">An immersive open-plan office layout designed to promote brand identity and workplace flexibility. Highlighting acoustic ceiling baffles and glass meeting spaces.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal reveal-up delay-1" data-category="residential" data-id="project-2">
+        <div class="project-card-image">
+          <img src="./assets/images/image-new-14.webp" alt="Villa Refurb">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Mid-Century Modern Villa</h3>
+              <span class="p-card-cat">Residential - In Progress</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Eleanor Vance</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $120,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> July 26, 2026 (Est.)</div>
+              <div class="p-detail-item"><strong>Status:</strong> In Progress</div>
+            </div>
+            <p class="p-card-summary">A complete multi-floor villa renovation blending classic mid-century teak furniture configurations with modern open-concept space planning.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="project-card reveal reveal-up" data-category="residential" data-id="project-1">
+        <div class="project-card-image">
+          <img src="./assets/images/portfolio-bedroom.webp" alt="Bedroom Design">
+        </div>
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <div>
+              <h3 class="p-card-title">Minimalist Master Bedroom</h3>
+              <span class="p-card-cat">Residential - Completed</span>
+            </div>
+            <div class="p-card-divider"></div>
+            <div class="p-card-details">
+              <div class="p-detail-item"><strong>Client:</strong> Eleanor Vance</div>
+              <div class="p-detail-item"><strong>Budget:</strong> $45,000</div>
+              <div class="p-detail-item"><strong>Date:</strong> May 10, 2026</div>
+              <div class="p-detail-item"><strong>Status:</strong> Completed</div>
+            </div>
+            <p class="p-card-summary">A sleek, warm minimalist master bedroom featuring custom teak wall cladding, low-profile bed framing, and integrated LED backlight panels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  
+
+  <!-- Project Modal Container -->
+  <div id="projectModal" class="project-modal" style="display:none;"></div>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo" style="margin-bottom: 20px;">
+          <a href="index.html" style="display: inline-block;"><img src="./assets/images/logo.webp" alt="Stackly Logo" class="logo-img"></a>
+        </div>
+        <p class="footer-desc">Crafting refined, bespoke interiors that blend functionality and modern aesthetics. Your vision, realized with timeless sophistication.</p>
+        <div class="social-links">
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="404.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="design.html">Design Portfolio</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Insights & Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Our Services</h4>
+        <ul>
+          <li><a href="services.html">Space Planning</a></li>
+          <li><a href="services.html">Residential Styling</a></li>
+          <li><a href="services.html">Commercial Interiors</a></li>
+          <li><a href="services.html">Furniture Curation</a></li>
+          <li><a href="services.html">Lighting & Acoustics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-title">Contact</h4>
+        <p class="contact-info" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; line-height: 1.4;">
+          <i class="fa-solid fa-map-pin" style="color: var(--accent-gold); margin-top: 3px;"></i>
+          <span>500 Luxury Lane, Design District<br>New York, NY 10013</span>
+        </p>
+        <p class="contact-info" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+          <i class="fa-solid fa-phone" style="color: var(--accent-gold); font-size: 0.85rem;"></i>
+          <span>+1 (212) 555-8900</span>
+        </p>
+        <p class="contact-info" style="display: flex; align-items: center; gap: 10px;">
+          <i class="fa-solid fa-envelope" style="color: var(--accent-gold); font-size: 0.85rem;"></i>
+          <a href="mailto:atelier@stackly.com" style="color: inherit; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='inherit'">atelier@stackly.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 STACKLY Atelier. All rights reserved. Premium Design Experience.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module">
+    import db from './js/data.js';
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Sync login text
+      const user = db.getCurrentUser();
+      const loginBtn = document.getElementById("loginNavBtn");
+      if (loginBtn && user) {
+        loginBtn.textContent = "Dashboard";
+        loginBtn.setAttribute("href", user.role === 'admin' ? "dashboard-admin.html" : "dashboard-user.html");
+        loginBtn.classList.add("btn-cta");
+        loginBtn.classList.remove("btn-login");
+      }
+
+      // 2. Before/After comparison slider
+      initBeforeAfterSlider();
+
+      // 3. Category filters
+      initFiltersAndSorting();
+
+      // 4. Project Modals (Disabled - details shown on hover)
+      // initProjectModals();
+
+      // 5. Configurator logic
+      initStyleConfigurator();
+
+      // 6. VR Walkthrough Loader
+      initVrWalkthrough();
+    });
+
+    function initBeforeAfterSlider() {
+      const slider = document.getElementById("baSlider");
+      const afterImage = document.getElementById("baAfterImage");
+      const handle = document.getElementById("baHandle");
+      const afterImgTag = document.getElementById("baAfterImgTag");
+      if (!slider || !afterImage || !handle || !afterImgTag) return;
+
+      const syncImageWidth = () => {
+        const sliderWidth = slider.offsetWidth;
+        afterImgTag.style.width = sliderWidth + "px";
+      };
+      
+      syncImageWidth();
+      window.addEventListener("resize", syncImageWidth);
+
+      let isDragging = false;
+      const moveSlider = (clientX) => {
+        const rect = slider.getBoundingClientRect();
+        const positionX = clientX - rect.left;
+        let percentage = (positionX / rect.width) * 100;
+        
+        if (percentage < 0) percentage = 0;
+        if (percentage > 100) percentage = 100;
+
+        handle.style.left = percentage + "%";
+        afterImage.style.width = percentage + "%";
+      };
+
+      handle.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        slider.classList.add("dragging");
+        e.preventDefault();
+      });
+
+      window.addEventListener("mousemove", (e) => {
+        if (!isDragging) return;
+        moveSlider(e.clientX);
+      });
+
+      window.addEventListener("mouseup", () => {
+        if (isDragging) {
+          isDragging = false;
+          slider.classList.remove("dragging");
+        }
+      });
+
+      handle.addEventListener("touchstart", () => {
+        isDragging = true;
+        slider.classList.add("dragging");
+      });
+
+      window.addEventListener("touchmove", (e) => {
+        if (!isDragging) return;
+        if (e.touches.length > 0) moveSlider(e.touches[0].clientX);
+      });
+
+      window.addEventListener("touchend", () => {
+        if (isDragging) {
+          isDragging = false;
+          slider.classList.remove("dragging");
+        }
+      });
+    }
+
+    function initFiltersAndSorting() {
+      const filters = document.querySelectorAll(".filter-btn");
+      const grid = document.getElementById("projectsGrid");
+      const searchInput = document.getElementById("projectSearchInput");
+      const sortSelect = document.getElementById("projectSortSelect");
+      const statusSelect = document.getElementById("projectStatusSelect");
+      if (!grid) return;
+
+      const cards = Array.from(grid.querySelectorAll(".project-card"));
+
+      // Parse metadata for sorting
+      const cardData = cards.map(card => {
+        const title = card.querySelector(".p-card-title")?.textContent.toLowerCase() || "";
+        const summary = card.querySelector(".p-card-summary")?.textContent.toLowerCase() || "";
+        const cat = card.getAttribute("data-category") || "";
+        
+        // Find budget
+        let budget = 0;
+        const details = Array.from(card.querySelectorAll(".p-detail-item"));
+        const budgetDetail = details.find(item => item.textContent.includes("Budget:"));
+        if (budgetDetail) {
+          const match = budgetDetail.textContent.replace(/[^0-9]/g, "");
+          budget = parseInt(match, 10) || 0;
+        }
+
+        // Find date
+        let dateVal = new Date(0);
+        const dateDetail = details.find(item => item.textContent.includes("Date:"));
+        if (dateDetail) {
+          const dateStr = dateDetail.textContent.split("Date:")[1].trim().replace("(Est.)", "");
+          dateVal = new Date(dateStr);
+        }
+
+        // Find status
+        let status = "completed";
+        const statusDetail = details.find(item => item.textContent.includes("Status:"));
+        if (statusDetail) {
+          status = statusDetail.textContent.split("Status:")[1].trim().toLowerCase();
+        }
+
+        return { card, title, summary, cat, budget, date: dateVal, status };
+      });
+
+      let activeCategory = "all";
+
+      const applyFilters = () => {
+        const query = searchInput?.value.toLowerCase().trim() || "";
+        const statusFilter = statusSelect?.value || "all";
+        const sortVal = sortSelect?.value || "default";
+
+        // Filter
+        let visibleItems = cardData.filter(item => {
+          const matchesCategory = (activeCategory === "all" || item.cat === activeCategory);
+          const matchesQuery = item.title.includes(query) || item.summary.includes(query);
+          const matchesStatus = (statusFilter === "all" || item.status === statusFilter);
+          return matchesCategory && matchesQuery && matchesStatus;
+        });
+
+        // Sort
+        if (sortVal === "budget-desc") {
+          visibleItems.sort((a, b) => b.budget - a.budget);
+        } else if (sortVal === "budget-asc") {
+          visibleItems.sort((a, b) => a.budget - b.budget);
+        } else if (sortVal === "date-desc") {
+          visibleItems.sort((a, b) => b.date - a.date);
+        } else if (sortVal === "date-asc") {
+          visibleItems.sort((a, b) => a.date - b.date);
+        } else if (sortVal === "name-asc") {
+          visibleItems.sort((a, b) => a.title.localeCompare(b.title));
+        }
+
+        // Apply display state & DOM order
+        grid.style.opacity = "0";
+        setTimeout(() => {
+          // Hide all
+          cardData.forEach(item => {
+            item.card.style.display = "none";
+          });
+
+          // Show and append in sorted order
+          visibleItems.forEach(item => {
+            item.card.style.display = "block";
+            grid.appendChild(item.card);
+          });
+
+          grid.style.opacity = "1";
+        }, 300);
+      };
+
+      // Set up event listeners
+      filters.forEach(btn => {
+        btn.addEventListener("click", () => {
+          filters.forEach(f => f.classList.remove("active"));
+          btn.classList.add("active");
+          activeCategory = btn.getAttribute("data-filter");
+          applyFilters();
+        });
+      });
+
+      searchInput?.addEventListener("input", applyFilters);
+      sortSelect?.addEventListener("change", applyFilters);
+      statusSelect?.addEventListener("change", applyFilters);
+    }
+
+    function initProjectModals() {
+      const cards = document.querySelectorAll(".project-card");
+      const modal = document.getElementById("projectModal");
+      if (!cards.length || !modal) return;
+
+      cards.forEach(card => {
+        card.addEventListener("click", () => {
+          const projId = card.getAttribute("data-id");
+          const projects = db.getProjects();
+          const project = projects.find(p => p.id === projId);
+          if (!project) return;
+
+          modal.innerHTML = `
+            <div class="modal-backdrop"></div>
+            <div class="modal-wrapper">
+              <button class="modal-close-btn" id="closeModal">&times;</button>
+              <div class="modal-inner-grid">
+                <div class="modal-media">
+                  <img src="${project.image}" alt="${project.title}">
+                </div>
+                <div class="modal-info">
+                  <h3 class="modal-project-title">${project.title}</h3>
+                  <span class="modal-project-cat">${project.category} Design</span>
+                  
+                  <p class="modal-project-desc">${project.summary}</p>
+                  
+                  <table class="modal-meta-table">
+                    <tr>
+                      <th>Client:</th>
+                      <td>${project.client}</td>
+                    </tr>
+                    <tr>
+                      <th>Budget:</th>
+                      <td>${project.budget}</td>
+                    </tr>
+                    <tr>
+                      <th>Completion:</th>
+                      <td>${project.completionDate}</td>
+                    </tr>
+                    <tr>
+                      <th>Status:</th>
+                      <td><span class="badge ${project.status === 'Completed' ? 'success' : 'pending'}">${project.status}</span></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          `;
+
+          if (!document.getElementById("modalStyle")) {
+            const style = document.createElement("style");
+            style.id = "modalStyle";
+            style.textContent = `
+              .project-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 1500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 24px;
+              }
+              .modal-backdrop {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(30, 26, 23, 0.6);
+                backdrop-filter: blur(8px);
+              }
+              .modal-wrapper {
+                position: relative;
+                background-color: var(--bg-primary);
+                width: 100%;
+                max-width: 900px;
+                border-radius: var(--border-radius-lg);
+                border: 1px solid rgba(197, 168, 128, 0.2);
+                z-index: 2;
+                overflow: hidden;
+                box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+                animation: modalZoom 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+              }
+              @keyframes modalZoom {
+                0% { transform: scale(0.9); opacity: 0; }
+                100% { transform: scale(1); opacity: 1; }
+              }
+              .modal-close-btn {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 2rem;
+                color: var(--text-primary);
+                cursor: pointer;
+                z-index: 3;
+                line-height: 1;
+              }
+              .modal-inner-grid {
+                display: grid;
+                grid-template-columns: 1.2fr 1fr;
+              }
+              .modal-media img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                min-height: 450px;
+              }
+              .modal-info {
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+              }
+              .modal-project-title {
+                font-family: var(--font-heading);
+                font-size: 2.25rem;
+                line-height: 1.2;
+              }
+              .modal-project-cat {
+                font-size: 0.8125rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: var(--accent-gold-dark);
+                font-weight: 600;
+              }
+              .modal-project-desc {
+                font-size: 0.9375rem;
+                line-height: 1.6;
+                color: var(--text-secondary);
+              }
+              .modal-meta-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+              }
+              .modal-meta-table th {
+                text-align: left;
+                padding: 8px 0;
+                font-size: 0.875rem;
+                color: var(--text-light);
+                font-weight: 500;
+                width: 100px;
+              }
+              .modal-meta-table td {
+                padding: 8px 0;
+                font-size: 0.875rem;
+                font-weight: 600;
+              }
+              @media(max-width: 768px) {
+                .modal-inner-grid {
+                  grid-template-columns: 1fr;
+                }
+                .modal-media img {
+                  min-height: 250px;
+                  height: 250px;
+                }
+                .modal-info {
+                  padding: 24px;
+                }
+              }
+            `;
+            document.head.appendChild(style);
+          }
+
+          modal.style.display = "flex";
+          const closeModalFn = () => { modal.style.display = "none"; };
+          document.getElementById("closeModal").addEventListener("click", closeModalFn);
+          modal.querySelector(".modal-backdrop").addEventListener("click", closeModalFn);
+        });
+      });
+    }
+
+    function initStyleConfigurator() {
+      const form = document.getElementById("styleQuizForm");
+      const text = document.getElementById("styleText");
+      if (!form || !text) return;
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const wood = document.getElementById("woodSelect").value;
+        const metal = document.getElementById("accentSelect").value;
+        const vibe = document.getElementById("vibeSelect").value;
+
+        const descriptions = {
+          teak: "Premium oiled Teak provides warm, golden organic hues.",
+          oak: "Raw oak textures provide a dry, contemporary coastal feeling.",
+          walnut: "Deep, chocolate walnut represents executive luxury styling.",
+          brass: "Gold brass highlights introduce soft luxury highlights on handles.",
+          steel: "Industrial black steel constructs clean outlines and structures.",
+          chrome: "Polished chrome offers shiny futuristic modern contrasts.",
+          minimalist: "A zen space highlighting organic curves, clutter removal, and high airiness.",
+          luxury: "A rich layout utilizing high contrast materials, velvet accessories, and warm spotlights.",
+          industrial: "An open workspace featuring structural columns, brick tones, and focus spots."
+        };
+
+        text.innerHTML = `
+          <strong>Vibe:</strong> ${descriptions[vibe]}<br>
+          <strong>Timber:</strong> ${descriptions[wood]}<br>
+          <strong>Metal:</strong> ${descriptions[metal]}<br>
+          <em style="color: var(--accent-gold-dark); margin-top:8px; display:block;">Our designers recommend utilizing boucle seating structures and low-profile spotlights to anchor this specific formulation.</em>
+        `;
+      });
+    }
+
+    function initVrWalkthrough() {
+      const btn = document.getElementById("vrTriggerBtn");
+      const loader = document.getElementById("vrLoader");
+      const img = document.getElementById("vrImg");
+      const overlay = document.getElementById("vrMeshOverlay");
+      if (!btn || !loader || !img || !overlay) return;
+
+      btn.addEventListener("click", () => {
+        img.style.opacity = "0.1";
+        overlay.style.display = "none";
+        loader.style.display = "flex";
+        btn.disabled = true;
+
+        setTimeout(() => {
+          loader.style.display = "none";
+          img.style.opacity = "1";
+          overlay.style.display = "flex";
+          overlay.textContent = "[ IMMERSIVE 3D VR WALKTHROUGH ACTIVE - PORTAL DEPLOYED ]";
+          overlay.style.background = "rgba(197, 168, 128, 0.25)";
+          overlay.style.color = "var(--text-primary)";
+          overlay.style.fontFamily = "var(--font-body)";
+          overlay.style.fontWeight = "bold";
+          btn.disabled = false;
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Our Services</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+
+  <!-- Custom Luxury Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Page Transition Curtain -->
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain">
+    <div class="curtain-panel">
+      <div class="curtain-loader">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="curtain-logo">
+        <div class="curtain-spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar scrolled" id="mainNavbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="navLogo">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="logo-img">
+      </a>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="design.html" class="nav-link">Design</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="login.html" class="nav-btn btn-login" id="loginNavBtn">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!-- 6 CONTENT SECTIONS IN SERVICES PAGE        -->
+  <!-- ========================================== -->
+
+  <!-- SECTION 1: Services Hero Banner Section -->
+  <section class="page-hero-banner reveal reveal-up active">
+    <div class="page-hero-banner-bg">
+      <img src="./assets/images/services-bg.webp" alt="Services Background">
+    </div>
+    <div class="page-hero-banner-content">
+      <div class="page-hero-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span>Services</span>
+      </div>
+      <h1 class="page-hero-title">Bespoke Interior Solutions</h1>
+      <p class="page-hero-desc">We combine architectural space layout formulation, procurement sourcing, and structural oversight under one studio.</p>
+    </div>
+  </section>
+
+  
+
+  <!-- SECTION 3: Core Service Offerings -->
+  <section class="container section-padding">
+    <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+      <span class="about-section-subtitle">WHAT WE DO</span>
+      <h2 class="about-section-title">CORE SERVICE OFFERINGS</h2>
+    </div>
+
+    <div class="core-services-grid">
+      <!-- Card 1 -->
+      <div class="core-service-card reveal reveal-up">
+        <div class="service-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          </svg>
+        </div>
+        <h3 class="service-card-title">Full-Service Interior Design</h3>
+        <p class="service-card-desc">Complete end-to-end renovations and luxury furnishing plans for entire properties. We manage design, purchasing, and construction.</p>
+        <a href="contact.html" class="service-explore-link">Explore Service <span>→</span></a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="core-service-card reveal reveal-up delay-1">
+        <div class="service-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5v5.25a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V10.5M3 10.5h18M5.25 18v2.25M18.75 18v2.25M12 5.25v3M12 3a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+          </svg>
+        </div>
+        <h3 class="service-card-title">Kitchen & Bath Design</h3>
+        <p class="service-card-desc">Specialized design packages focused on the most high-traffic, value-add spaces in your home. Custom cabinetry, slab selection, and layouts.</p>
+        <a href="contact.html" class="service-explore-link">Explore Service <span>→</span></a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="core-service-card reveal reveal-up delay-2">
+        <div class="service-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 6a2 2 0 012-2h12a2 2 0 012 2M4 6v10a2 2 0 002 2h12a2 2 0 002-2V6M9 18v2M15 18v2M4 11h16" />
+          </svg>
+        </div>
+        <h3 class="service-card-title">Furnishings & Styling</h3>
+        <p class="service-card-desc">Curating bespoke furniture, rare textiles, drapery, and styling accessories to inject personality, warmth, and luxury into your home.</p>
+        <a href="contact.html" class="service-explore-link">Explore Service <span>→</span></a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="core-service-card reveal reveal-up">
+        <div class="service-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122l9.878-9.877a2.25 2.25 0 00-3.182-3.182l-9.878 9.877a2.25 2.25 0 003.182 3.182zM15.187 6.465l-1.06 1.06M13.066 8.586l-1.06 1.06M10.945 10.707l-1.061 1.06M8.824 12.828l-1.06 1.06M6.703 14.95l-1.06 1.06" />
+          </svg>
+        </div>
+        <h3 class="service-card-title">New Construction Consulting</h3>
+        <p class="service-card-desc">Collaborate directly with your architects and builders from day one. We ensure your structural layouts align with your interior vision.</p>
+        <a href="contact.html" class="service-explore-link">Explore Service <span>→</span></a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="core-service-card reveal reveal-up delay-1">
+        <div class="service-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12v10.5a1.5 1.5 0 01-1.5 1.5H3.75A1.5 1.5 0 012.25 15.75V5.25A1.5 1.5 0 013.75 3.75h16.5A1.5 1.5 0 0121.75 5.25z" />
+          </svg>
+        </div>
+        <h3 class="service-card-title">E-Design Packages</h3>
+        <p class="service-card-desc">Virtual design consultations for single spaces, providing mood boards, floor plans, and clickable shopping lists to execute at your own pace.</p>
+        <a href="contact.html" class="service-explore-link">Explore Service <span>→</span></a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="core-service-card reveal reveal-up delay-2">
+        <div class="service-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.015a2.992 2.992 0 002.25 1.015c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 003.75.614m-16.5 0L10 3.75m10 5.6V3.75M12 9.75V21" />
+          </svg>
+        </div>
+        <h3 class="service-card-title">Commercial & Hospitality</h3>
+        <p class="service-card-desc">Creating sophisticated, high-performance office environments, luxury retail boutiques, and upscale hospitality spaces that speak your brand.</p>
+        <a href="contact.html" class="service-explore-link">Explore Service <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Service Philosophy / Overview -->
+  <section class="section-padding philosophy-section">
+    <div class="container">
+      <div class="philosophy-card">
+        <div style="text-align: center; margin-bottom: 40px;" class="reveal reveal-scale">
+          <span class="about-section-subtitle">OUR STATEMENT</span>
+          <h2 class="about-section-title">Design That Works For Real Life</h2>
+        </div>
+        <div class="philosophy-grid">
+          <div class="philosophy-left reveal reveal-left">
+            <p>We believe that true luxury is not just about how a space looks, but how it feels and functions in your everyday routine. Our philosophy centers on creating tailored environments that harmonize visual drama with real-life durability. We don't just build showhouses; we shape homes that grow with you, reflecting your personal narrative at every turn.</p>
+           </div>
+          <div class="philosophy-right">
+            <div class="benefit-item reveal reveal-up delay-1">
+              <div class="benefit-checkmark">✓</div>
+              <div class="benefit-content">
+                <h4>Tailored to Your Lifestyle</h4>
+                <p>Custom-fit spatial flows designed around your daily habits, hobbies, and family routines.</p>
+              </div>
+            </div>
+            <div class="benefit-item reveal reveal-up delay-2">
+              <div class="benefit-checkmark">✓</div>
+              <div class="benefit-content">
+                <h4>End-to-End Management</h4>
+                <p>From initial blueprint sketch to white-glove reveal, we coordinate all trades, procurement, and logistics.</p>
+              </div>
+            </div>
+            <div class="benefit-item reveal reveal-up delay-3">
+              <div class="benefit-checkmark">✓</div>
+              <div class="benefit-content">
+                <h4>Trade-Only Access</h4>
+                <p>Exclusive relationships with global stone quarries, fabric mills, and boutique furniture artisans.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Our Design Process -->
+  <section class="section-padding design-process-section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+        <span class="about-section-subtitle">THE BLUEPRINT</span>
+        <h2 class="about-section-title">OUR DESIGN PROCESS</h2>
+      </div>
+
+      <div class="process-timeline-container">
+        <!-- Desktop Line (Horizontal) -->
+        <svg class="timeline-svg-desktop" viewBox="0 0 1200 8" fill="none">
+          <line x1="0" y1="4" x2="1200" y2="4" stroke="rgba(197, 168, 128, 0.15)" stroke-width="2" />
+          <path id="timelineProgressPathDesktop" d="M 0 4 L 1200 4" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" />
+        </svg>
+
+        <!-- Mobile Line (Vertical) -->
+        <svg class="timeline-svg-mobile" viewBox="0 0 8 800" fill="none" preserveAspectRatio="none">
+          <line x1="4" y1="0" x2="4" y2="800" stroke="rgba(197, 168, 128, 0.15)" stroke-width="2" />
+          <path id="timelineProgressPathMobile" d="M 4 0 L 4 800" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" />
+        </svg>
+
+        <div class="process-steps-row">
+          <!-- Step 1 -->
+          <div class="process-timeline-step reveal reveal-up">
+            <div class="process-step-node">01</div>
+            <h4 class="process-step-title">Discovery</h4>
+            <p class="process-step-desc">Complimentary call to align on vision + scope</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-timeline-step reveal reveal-up delay-1">
+            <div class="process-step-node">02</div>
+            <h4 class="process-step-title">Design Development</h4>
+            <p class="process-step-desc">Floor plans, mood boards, 3D renderings</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-timeline-step reveal reveal-up delay-2">
+            <div class="process-step-node">03</div>
+            <h4 class="process-step-title">Presentation</h4>
+            <p class="process-step-desc">Review and refine every detail together</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-timeline-step reveal reveal-up delay-3">
+            <div class="process-step-node">04</div>
+            <h4 class="process-step-title">Procurement</h4>
+            <p class="process-step-desc">We order, track, and manage all trade contractors</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-timeline-step reveal reveal-up delay-4">
+            <div class="process-step-node">05</div>
+            <h4 class="process-step-title">Installation</h4>
+            <p class="process-step-desc">White-glove installation and grand reveal day</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Featured Service Case Study -->
+  <section class="container section-padding">
+    <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+      <span class="about-section-subtitle">SUCCESS STORIES</span>
+      <h2 class="about-section-title">FEATURED CASE STUDY</h2>
+    </div>
+
+    <div class="case-study-grid">
+      <!-- Before/After Slider (Left Column) -->
+      <div class="reveal reveal-left">
+        <div class="cs-ba-slider" id="csBaSlider">
+          <!-- Before Image -->
+          <div class="cs-ba-img before">
+            <img src="./assets/images/before-livingroom.webp" alt="Palo Alto Kitchen Remodel Before">
+            <span class="cs-ba-badge before-badge">Before</span>
+          </div>
+          <!-- After Image -->
+          <div class="cs-ba-img after">
+            <img src="./assets/images/after-livingroom.webp" alt="Palo Alto Kitchen Remodel After">
+            <span class="cs-ba-badge after-badge">After</span>
+          </div>
+          <!-- Slider Handle -->
+          <div class="cs-ba-handle" id="csBaHandle">
+            <div class="cs-ba-knob"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study Info (Right Column) -->
+      <div class="case-study-content reveal reveal-right">
+        <span class="hero-sub">Palo Alto, CA</span>
+        <h3>Modern Organic Kitchen Remodel - Palo Alto</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.9375rem;">A complete reconfiguration of a suburban kitchen into a flowing culinary heart, emphasizing raw textures, natural light, and structural simplicity.</p>
+        
+        <ul class="case-study-details">
+          <li>
+            <strong>Challenge:</strong>
+            A dark, segmented space with poor flow, outdated cabinetry, and a lack of connection to natural light.
+          </li>
+          <li>
+            <strong>Solution:</strong>
+            Removed structural walls to open the floor plan, introduced a warm organic palette of honed travertine, white oak, and brushed brass.
+          </li>
+          <li>
+            <strong>Result:</strong>
+            A bright, expansive area that blends architectural clean lines with cozy everyday functionality.
+          </li>
+        </ul>
+
+        <div style="margin-top: 10px;">
+          <a href="design.html" class="btn btn-luxury"><span>View Full Case Study</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Investment & Packages -->
+  <section class="container section-padding">
+    <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+      <span class="about-section-subtitle">PRICING GUIDES</span>
+      <h2 class="about-section-title">INVESTMENT & PACKAGES</h2>
+      <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">Transparent investment tiers designed to align with your design needs and project complexity.</p>
+    </div>
+
+    <div class="packages-grid">
+      <!-- Tier 1: Refresh -->
+      <div class="package-card reveal reveal-scale">
+        <div class="package-header">
+          <span class="package-tier">Tier 01</span>
+          <h3 class="package-name">Refresh</h3>
+          <span class="package-price">From $12,000</span>
+        </div>
+        <p class="package-desc">Single room styling and light updates to refresh your space without major structural layout changes.</p>
+        <h4 class="package-features-title">What's Included:</h4>
+        <ul class="package-features">
+          <li>Custom furniture & layout planning</li>
+          <li>Textile, rugs, & artwork sourcing</li>
+          <li>Paint and wallcovering recommendations</li>
+          <li>Procurement & purchasing coordination</li>
+          <li>Final styling & white-glove setup</li>
+        </ul>
+        <div class="package-cta">
+          <a href="contact.html" class="btn btn-luxury"><span>Select Refresh</span></a>
+        </div>
+      </div>
+
+      <!-- Tier 2: Signature (Featured) -->
+      <div class="package-card featured reveal reveal-scale delay-1">
+        <span class="package-badge">Most Popular</span>
+        <div class="package-header">
+          <span class="package-tier">Tier 02</span>
+          <h3 class="package-name">Signature</h3>
+          <span class="package-price">From $35,000</span>
+        </div>
+        <p class="package-desc">Complete single or multi-room layout redesigns combined with trade procurement and project management.</p>
+        <h4 class="package-features-title">What's Included:</h4>
+        <ul class="package-features">
+          <li>Everything in Refresh package</li>
+          <li>Detailed 2D CAD floor plans</li>
+          <li>Full-room 3D architectural renderings</li>
+          <li>Custom millwork and built-in design</li>
+          <li>Material, stone, & lighting schedules</li>
+          <li>Construction & trade coordination</li>
+        </ul>
+        <div class="package-cta">
+          <a href="contact.html" class="btn btn-cta"><span>Select Signature</span></a>
+        </div>
+      </div>
+
+      <!-- Tier 3: Bespoke -->
+      <div class="package-card reveal reveal-scale delay-2">
+        <div class="package-header">
+          <span class="package-tier">Tier 03</span>
+          <h3 class="package-name">Bespoke</h3>
+          <span class="package-price">Custom Proposal</span>
+        </div>
+        <p class="package-desc">Comprehensive design service for whole estates, historic properties, or new construction collaborations.</p>
+        <h4 class="package-features-title">What's Included:</h4>
+        <ul class="package-features">
+          <li>Fully custom structural blueprints</li>
+          <li>Collaborative architect coordination</li>
+          <li>Bespoke furniture commission styling</li>
+          <li>Unlimited 3D renderings and revisions</li>
+          <li>Quarry-direct imports & textile hunts</li>
+          <li>Priority scheduling & direct architect access</li>
+        </ul>
+        <div class="package-cta">
+          <a href="contact.html" class="btn btn-luxury"><span>Inquire Now</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- SECTION 11: Studio Metrics Dashboard -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top:1px solid rgba(142,132,124,0.15); border-bottom:1px solid rgba(142,132,124,0.15);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+        <span class="about-section-subtitle">STUDIO METRICS</span>
+        <h2 class="about-section-title">DESIGN BY THE NUMBERS</h2>
+      </div>
+
+      <div class="metrics-grid-panel reveal reveal-up">
+        <div class="metric-card-visual" style="--offset-val: 70.75px;">
+          <div class="metric-svg-wrap">
+            <svg viewBox="0 0 100 100">
+              <circle class="metric-circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="metric-circle-val" cx="50" cy="50" r="45" style="stroke-dashoffset: 70.75;"></circle>
+            </svg>
+            <div class="metric-number-center">75%</div>
+          </div>
+          <div class="metric-desc-wrap">
+            <h4 class="metric-title">Bespoke Furnishings</h4>
+            <p class="metric-text">Three-quarters of all materials are milled exclusively in our workshop.</p>
+          </div>
+        </div>
+
+        <div class="metric-card-visual" style="--offset-val: 14.15px;">
+          <div class="metric-svg-wrap">
+            <svg viewBox="0 0 100 100">
+              <circle class="metric-circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="metric-circle-val" cx="50" cy="50" r="45" style="stroke-dashoffset: 14.15;"></circle>
+            </svg>
+            <div class="metric-number-center">95%</div>
+          </div>
+          <div class="metric-desc-wrap">
+            <h4 class="metric-title">Sustainable Woods</h4>
+            <p class="metric-text">Veneers sourced from eco-certified FSC forests in northern Sweden.</p>
+          </div>
+        </div>
+
+        <div class="metric-card-visual" style="--offset-val: 28.3px;">
+          <div class="metric-svg-wrap">
+            <svg viewBox="0 0 100 100">
+              <circle class="metric-circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="metric-circle-val" cx="50" cy="50" r="45" style="stroke-dashoffset: 28.3;"></circle>
+            </svg>
+            <div class="metric-number-center">90%</div>
+          </div>
+          <div class="metric-desc-wrap">
+            <h4 class="metric-title">Acoustic Comfort</h4>
+            <p class="metric-text">Echo coefficients damped in open offices to promote acoustic focus.</p>
+          </div>
+        </div>
+
+        <div class="metric-card-visual" style="--offset-val: 0px;">
+          <div class="metric-svg-wrap">
+            <svg viewBox="0 0 100 100">
+              <circle class="metric-circle-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="metric-circle-val" cx="50" cy="50" r="45" style="stroke-dashoffset: 0;"></circle>
+            </svg>
+            <div class="metric-number-center">100%</div>
+          </div>
+          <div class="metric-desc-wrap">
+            <h4 class="metric-title">Quality Standard</h4>
+            <p class="metric-text">Daily inspections on-site until handover checklists are clear.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: Bespoke Lighting & Acoustics Design Consultancy -->
+  <section class="container section-padding" style="padding-bottom:80px;">
+    <div class="split-grid-1-2">
+      <div class="reveal reveal-left">
+        <span class="about-section-subtitle">ATMOSPHERE & SCIENCE</span>
+        <h2 class="about-section-title">LIGHTING & ACOUSTICS ENGINEERING</h2>
+        <p class="about-intro-text">Refined rooms require detailed math. Our studio computes exact lux coverage curves and schedules electrical loops to create visual warmth without glare. Simultaneously, we design home theater layouts and ceiling panels with bamboo and felt structures to manage acoustic echo.</p>
+        <ul class="service-features-list" style="grid-template-columns:1fr; gap:12px; margin-top:20px;">
+          <li>3D Lux illumination heatmaps</li>
+          <li>Bamboo acoustic ceiling integrations</li>
+          <li>Warm-dim LED loop automation setups</li>
+        </ul>
+      </div>
+      <div class="reveal reveal-right" style="position:relative; border-radius:var(--border-radius-lg); overflow:hidden; height: 320px; box-shadow: 0 15px 35px rgba(30,26,23,0.08);">
+        <img src="./assets/images/image-new-1.webp" alt="Acoustic bedroom layout" style="width:100%; height:100%; object-fit:cover; filter: contrast(1.1) brightness(0.9);">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: Interactive FAQ Accordion Section -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top:1px solid rgba(142,132,124,0.15); border-bottom:1px solid rgba(142,132,124,0.15);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+        <span class="about-section-subtitle">COMMON CONCERNS</span>
+        <h2 class="about-section-title">FREQUENTLY ASKED QUESTIONS</h2>
+      </div>
+
+      <div class="faq-container reveal reveal-up">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the typical timeline for a master bedroom refurbish project?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Generally, bedroom renovations average 6 to 10 weeks. This covers conceptualization (2 weeks), procurement of bespoke headboards & light setups (4 weeks), and on-site building, paint, and styling (2 weeks).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you work with my builders, or do you provide your own contractor team?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We do both. We are happy to coordinate and supervise your designated builders, providing detailed dwg drawings and hardware models. Alternatively, we can recommend our vetted premium contractors who have crafted with us for years.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do you handle client approvals for budget modifications?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>All budgets are managed online. If a variation occurs (e.g. material upgrade), a proposal invoice is posted to your Client Dashboard. We never proceed with purchase orders without digital check-off approvals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo" style="margin-bottom: 20px;">
+          <a href="index.html" style="display: inline-block;"><img src="./assets/images/logo.webp" alt="Stackly Logo" class="logo-img"></a>
+        </div>
+        <p class="footer-desc">Crafting refined, bespoke interiors that blend functionality and modern aesthetics. Your vision, realized with timeless sophistication.</p>
+        <div class="social-links">
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="404.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="design.html">Design Portfolio</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Insights & Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Our Services</h4>
+        <ul>
+          <li><a href="services.html">Space Planning</a></li>
+          <li><a href="services.html">Residential Styling</a></li>
+          <li><a href="services.html">Commercial Interiors</a></li>
+          <li><a href="services.html">Furniture Curation</a></li>
+          <li><a href="services.html">Lighting & Acoustics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-title">Contact</h4>
+        <p class="contact-info" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; line-height: 1.4;">
+          <i class="fa-solid fa-map-pin" style="color: var(--accent-gold); margin-top: 3px;"></i>
+          <span>500 Luxury Lane, Design District<br>New York, NY 10013</span>
+        </p>
+        <p class="contact-info" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+          <i class="fa-solid fa-phone" style="color: var(--accent-gold); font-size: 0.85rem;"></i>
+          <span>+1 (212) 555-8900</span>
+        </p>
+        <p class="contact-info" style="display: flex; align-items: center; gap: 10px;">
+          <i class="fa-solid fa-envelope" style="color: var(--accent-gold); font-size: 0.85rem;"></i>
+          <a href="mailto:atelier@stackly.com" style="color: inherit; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='inherit'">atelier@stackly.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 STACKLY Atelier. All rights reserved. Premium Design Experience.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module">
+    import db from './js/data.js';
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Sync login text
+      const user = db.getCurrentUser();
+      const loginBtn = document.getElementById("loginNavBtn");
+      if (loginBtn && user) {
+        loginBtn.textContent = "Dashboard";
+        loginBtn.setAttribute("href", user.role === 'admin' ? "dashboard-admin.html" : "dashboard-user.html");
+        loginBtn.classList.add("btn-cta");
+        loginBtn.classList.remove("btn-login");
+      }
+
+      // pricing calculator
+      initPricingCalculator();
+
+      // faq accordion
+      initFaqAccordion();
+
+      // Interactive Swatch Board
+      initSwatchBoard();
+
+      // Initialize Case Study Before/After Slider
+      initCaseStudySlider();
+
+      // Initialize scroll progress timeline line drawing
+      initProcessTimeline();
+
+      // Inject custom styling for slider range elements
+      if (!document.getElementById("sliderStyle")) {
+        const style = document.createElement("style");
+        style.id = "sliderStyle";
+        style.textContent = `
+          .custom-slider-range::-webkit-slider-thumb {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--accent-gold);
+            cursor: pointer;
+            border: 2px solid var(--text-primary);
+            transition: var(--transition-fast);
+          }
+          .custom-slider-range::-webkit-slider-thumb:hover {
+            background-color: var(--text-primary);
+            border-color: var(--accent-gold);
+          }
+          .process-step {
+            padding: 24px;
+            border-left: 2px solid rgba(197, 168, 128, 0.2);
+            transition: var(--transition-fast);
+          }
+          .process-step:hover {
+            border-color: var(--accent-gold);
+          }
+          .process-num {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            display: block;
+            margin-bottom: 12px;
+            line-height: 1;
+          }
+          .process-name {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+          }
+          .process-text {
+            font-size: 0.8125rem;
+            line-height: 1.5;
+            color: var(--text-secondary);
+          }
+          .work-process-flow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+          }
+          .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+          }
+          .faq-item {
+            background-color: var(--bg-white);
+            border: 1px solid rgba(142, 132, 124, 0.15);
+            border-radius: var(--border-radius-sm);
+            overflow: hidden;
+            transition: var(--transition-fast);
+          }
+          .faq-question {
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            cursor: pointer;
+            user-select: none;
+          }
+          .faq-icon {
+            font-size: 1.25rem;
+            color: var(--accent-gold-dark);
+            transition: transform 0.3s;
+          }
+          .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            padding: 0 24px;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            line-height: 1.6;
+          }
+          .faq-item.open {
+            border-color: var(--accent-gold);
+          }
+          .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+          }
+          .faq-item.open .faq-answer {
+            max-height: 200px;
+            padding-bottom: 20px;
+          }
+          @media(max-width: 992px) {
+            .work-process-flow {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 24px;
+            }
+          }
+          @media(max-width: 576px) {
+            .work-process-flow {
+              grid-template-columns: 1fr;
+            }
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    });
+
+    function initPricingCalculator() {
+      const range = document.getElementById("sqFtRange");
+      const val = document.getElementById("sqFtValue");
+      const tier = document.getElementById("tierSelect");
+      const price = document.getElementById("estimatedPrice");
+      if (!range || !val || !tier || !price) return;
+
+      const calculate = () => {
+        const sqFt = parseInt(range.value);
+        val.textContent = sqFt.toLocaleString();
+
+        const rates = {
+          standard: 10,
+          premium: 25,
+          executive: 45
+        };
+        const rate = rates[tier.value] || 10;
+        const total = sqFt * rate;
+        price.textContent = "$" + total.toLocaleString();
+      };
+
+      range.addEventListener("input", calculate);
+      tier.addEventListener("change", calculate);
+    }
+
+    function initFaqAccordion() {
+      const questions = document.querySelectorAll(".faq-question");
+      questions.forEach(q => {
+        q.addEventListener("click", () => {
+          const item = q.closest(".faq-item");
+          const open = item.classList.contains("open");
+          document.querySelectorAll(".faq-item").forEach(el => el.classList.remove("open"));
+          if (!open) item.classList.add("open");
+        });
+      });
+    }
+
+    function initSwatchBoard() {
+      const swatches = document.querySelectorAll(".swatch-card");
+      const activeImg = document.getElementById("swatchImg");
+      const activeTitle = document.getElementById("swatchTitle");
+      const activeDesc = document.getElementById("swatchDesc");
+      const activeSource = document.getElementById("swatchSource");
+      const activeAcoustics = document.getElementById("swatchAcoustics");
+      const activeBestFor = document.getElementById("swatchBestFor");
+      const activePanel = document.getElementById("activeSwatchPanel");
+      if (!swatches.length || !activeImg || !activeTitle || !activeDesc || !activeSource || !activeAcoustics || !activeBestFor || !activePanel) return;
+
+      const swatchData = {
+        marble: {
+          title: "Italian Carrara Marble",
+          desc: "Naturally veined, bookmatched marble panels imported directly from Italian quarries. Hand-polished to a honed satin texture to retain mineral depth without glare.",
+          img: "./assets/images/material-marble.webp",
+          source: "Tuscany, Italy",
+          acoustics: "Hard Reflective",
+          bestFor: "Fireplace / Counters"
+        },
+        brass: {
+          title: "Satin Brushed Brass",
+          desc: "Bespoke brass hardware pieces hand-milled to custom templates. Chemically brushed for a soft gold hue that coordinates with warm-dim lighting spots.",
+          img: "./assets/images/material-brass.webp",
+          source: "Birmingham, UK",
+          acoustics: "Mild Reflective",
+          bestFor: "Handles / Trim Fittings"
+        },
+        leather: {
+          title: "Atelier Full-Grain Leather",
+          desc: "Premium, vegetable-tanned full-grain leather hides processed with organic oils. Stretched onto custom bed headboards and bench structures for acoustic softness.",
+          img: "./assets/images/material-leather.webp",
+          source: "Florence, Italy",
+          acoustics: "Medium Absorption",
+          bestFor: "Headboards / Panel Tops"
+        },
+        felt: {
+          title: "High-Density Acoustic Felt",
+          desc: "Eco-conscious wool felt composites engineered to absorb specific architectural echo frequencies. Routed into geometric textures for functional boardrooms and hallways.",
+          img: "./assets/images/material-felt.webp",
+          source: "Munich, Germany",
+          acoustics: "High Absorption",
+          bestFor: "Ceiling / Wall Panels"
+        }
+      };
+
+      swatches.forEach(swatch => {
+        swatch.addEventListener("click", () => {
+          swatches.forEach(s => s.classList.remove("active"));
+          swatch.classList.add("active");
+
+          const type = swatch.getAttribute("data-swatch");
+          const data = swatchData[type];
+          if (!data) return;
+
+          activePanel.style.opacity = "0";
+          setTimeout(() => {
+            activeImg.src = data.img;
+            activeImg.alt = data.title;
+            activeTitle.textContent = data.title;
+            activeDesc.textContent = data.desc;
+            activeSource.textContent = data.source;
+            activeAcoustics.textContent = data.acoustics;
+            activeBestFor.textContent = data.bestFor;
+            activePanel.style.opacity = "1";
+          }, 300);
+        });
+      });
+    }
+
+    function initCaseStudySlider() {
+      const slider = document.getElementById("csBaSlider");
+      const handle = document.getElementById("csBaHandle");
+      if (!slider || !handle) return;
+
+      let isDragging = false;
+
+      const updateSlider = (clientX) => {
+        const rect = slider.getBoundingClientRect();
+        const x = clientX - rect.left;
+        let percentage = (x / rect.width) * 100;
+        percentage = Math.max(0, Math.min(100, percentage));
+        slider.style.setProperty("--slide-pos", `${percentage}%`);
+      };
+
+      const startDrag = (e) => {
+        isDragging = true;
+        updateSlider(e.clientX || e.touches[0].clientX);
+      };
+
+      const stopDrag = () => {
+        isDragging = false;
+      };
+
+      const drag = (e) => {
+        if (!isDragging) return;
+        updateSlider(e.clientX || e.touches[0].clientX);
+      };
+
+      // Mouse Events
+      handle.addEventListener("mousedown", startDrag);
+      slider.addEventListener("mousemove", drag);
+      window.addEventListener("mouseup", stopDrag);
+
+      // Touch Events (Mobile)
+      handle.addEventListener("touchstart", startDrag, { passive: true });
+      slider.addEventListener("touchmove", drag, { passive: true });
+      window.addEventListener("touchend", stopDrag);
+      
+      // Allow clicking anywhere on the slider to snap to that position
+      slider.addEventListener("click", (e) => {
+        if (e.target.closest(".cs-ba-knob")) return;
+        updateSlider(e.clientX);
+      });
+    }
+
+    function initProcessTimeline() {
+      const section = document.querySelector(".design-process-section");
+      const pathDesktop = document.getElementById("timelineProgressPathDesktop");
+      const pathMobile = document.getElementById("timelineProgressPathMobile");
+      if (!section) return;
+
+      const updateLine = () => {
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // Compute position progress: 
+        // 0% when the section top is at 85% of window height
+        // 100% when the section bottom is at 15% of window height
+        const startPoint = windowHeight * 0.85;
+        const endPoint = windowHeight * 0.15;
+        const currentPosition = rect.top;
+        const rangeStart = startPoint;
+        const rangeEnd = endPoint - rect.height;
+        
+        const progress = (currentPosition - rangeStart) / (rangeEnd - rangeStart);
+        const clampedProgress = Math.max(0, Math.min(1, progress));
+        
+        // Desktop Line Drawing (horizontal)
+        if (pathDesktop && window.getComputedStyle(pathDesktop.ownerSVGElement).display !== "none") {
+          const pathLength = 1200; // coordinate length
+          pathDesktop.style.strokeDasharray = pathLength;
+          pathDesktop.style.strokeDashoffset = pathLength * (1 - clampedProgress);
+        }
+        
+        // Mobile Line Drawing (vertical)
+        if (pathMobile && window.getComputedStyle(pathMobile.ownerSVGElement).display !== "none") {
+          const pathLength = 800; // coordinate length
+          pathMobile.style.strokeDasharray = pathLength;
+          pathMobile.style.strokeDashoffset = pathLength * (1 - clampedProgress);
+        }
+      };
+
+      window.addEventListener("scroll", updateLine);
+      window.addEventListener("resize", updateLine);
+      updateLine();
+    }
+  </script>
+</body>
+</html>
+

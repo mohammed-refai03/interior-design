@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Architectural Void | Stackly Atelier</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================
+           1. DESIGN SYSTEM & ROOT VARIABLES
+           ========================================== */
+        :root {
+            --clr-bg: #FAFAF9;
+            --clr-surface: #FFFFFF;
+            --clr-charcoal: #1C1C1C;
+            --clr-brass: #C5A47E;
+            --clr-border: rgba(28, 28, 28, 0.06);
+            --clr-text-muted: #7E7E7E;
+
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Inter', sans-serif;
+
+            --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-medium: all 0.6s var(--ease-premium);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            min-height: 100%;
+            background-color: var(--clr-bg);
+            color: var(--clr-charcoal);
+            font-family: var(--font-sans);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ==========================================
+           2. SPLIT SCREEN BLUEPRINT LAYOUT
+           ========================================== */
+        .viewport-404 {
+            min-height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            position: relative;
+        }
+
+        /* ==========================================
+           3. CONTINUOUS TECHNICAL MORPHING ANIMATION
+           ========================================== */
+        .blueprint-canvas-panel {
+            width: 100%;
+            height: 100%;
+            background-color: #F1EFEA;
+            border-right: 1px solid var(--clr-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Drafting Grid Lines Overlay */
+        .blueprint-canvas-panel::before {
+            content: '';
+            position: absolute;
+            width: 200%; height: 200%;
+            background-image: 
+                linear-gradient(rgba(28,28,28,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(28,28,28,0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 1;
+        }
+
+        .technical-blueprint-svg {
+            width: 70%;
+            height: auto;
+            max-width: 440px;
+            z-index: 2;
+        }
+
+        /* Infinite structural layout loop animations */
+        .blueprint-wall-loop {
+            stroke-dasharray: 800;
+            stroke-dashoffset: 800;
+            animation: drawBlueprintLines 8s linear infinite, fluidMorphLayout 12s var(--ease-premium) infinite alternate;
+        }
+
+        .blueprint-furniture-loop {
+            transform-origin: center;
+            animation: rotatePlanComponents 16s ease-in-out infinite alternate;
+        }
+
+        .blueprint-crosshair-loop {
+            animation: technicalScan 6s linear infinite;
+        }
+
+        @keyframes drawBlueprintLines {
+            0% { stroke-dashoffset: 800; }
+            50% { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: -800; }
+        }
+
+        @keyframes fluidMorphLayout {
+            0% { transform: scale(1) translate(0, 0); }
+            33% { transform: scale(0.95) translate(-10px, 15px); stroke-width: 1.5px; }
+            66% { transform: scale(1.03) translate(15px, -5px); }
+            100% { transform: scale(0.98) translate(0, 0); stroke-width: 1px; }
+        }
+
+        @keyframes rotatePlanComponents {
+            0% { transform: rotate(0deg) scale(1); opacity: 0.4; }
+            50% { transform: rotate(5deg) scale(0.92); opacity: 0.8; }
+            100% { transform: rotate(-5deg) scale(1.05); opacity: 0.4; }
+        }
+
+        @keyframes technicalScan {
+            0% { transform: translateY(-30px); opacity: 0.2; }
+            50% { transform: translateY(30px) translateX(10px); opacity: 0.7; }
+            100% { transform: translateY(-30px); opacity: 0.2; }
+        }
+
+        /* ==========================================
+           4. EDITORIAL TEXT PANEL
+           ========================================== */
+        .editorial-content-panel {
+            padding: 0 clamp(2rem, 6vw, 6rem);
+            z-index: 2;
+        }
+
+        .technical-tag {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: var(--clr-brass);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .editorial-content-panel h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(2.2rem, 8vw, 4.5rem);
+            line-height: 1.1;
+            font-weight: 400;
+            margin-bottom: 1.8rem;
+        }
+
+        .editorial-content-panel p {
+            font-size: clamp(0.95rem, 3vw, 1.1rem);
+            line-height: 1.75;
+            color: var(--clr-text-muted);
+            margin-bottom: 3rem;
+            max-width: 480px;
+        }
+
+        /* ==========================================
+           5. ACTION MECHANICS
+           ========================================== */
+        .navigation-action-tray {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.1rem 2.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            background: transparent;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: var(--transition-medium);
+        }
+
+        .btn-charcoal {
+            background-color: var(--clr-charcoal);
+            color: var(--clr-bg);
+            border-color: var(--clr-charcoal);
+        }
+
+        .btn-charcoal:hover {
+            background-color: transparent;
+            color: var(--clr-charcoal);
+        }
+
+        .btn-brass-outline {
+            border-color: var(--clr-brass);
+            color: var(--clr-charcoal);
+        }
+
+        .btn-brass-outline::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: var(--clr-brass);
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: var(--transition-medium);
+            z-index: -1;
+        }
+
+        .btn-brass-outline:hover { color: var(--clr-surface); }
+        .btn-brass-outline:hover::before { transform: scaleY(1); transform-origin: top; }
+
+        .btn:focus-visible {
+            outline: 2px solid var(--clr-brass);
+            outline-offset: 4px;
+        }
+
+        /* ==========================================
+           6. RESPONSIVE ADAPTATIONS
+           ========================================== */
+        @media (max-width: 992px) {
+            .viewport-404 {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+            }
+            .blueprint-canvas-panel { height: 40vh; min-height: 250px; }
+            .editorial-content-panel { padding: 3rem 2rem 4rem 2rem; }
+        }
+
+        @media (max-width: 576px) {
+            .editorial-content-panel { padding: 2rem 1.5rem 3rem 1.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            .navigation-action-tray { flex-direction: column; gap: 1rem; width: 100%; }
+            .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="viewport-404" role="main">
+        
+        <div class="blueprint-canvas-panel">
+            <svg class="technical-blueprint-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="10" width="180" height="180" stroke="#1C1C1C" stroke-width="0.75" opacity="0.15"/>
+                
+                <g class="blueprint-wall-loop">
+                    <path d="M 20,20 L 180,20 L 180,180 L 20,180 Z" stroke="#1C1C1C" stroke-width="1" stroke-linecap="square"/>
+                    <path d="M 20,80 L 120,80 L 120,180" stroke="#1C1C1C" stroke-width="1.2"/>
+                    <path d="M 120,120 L 180,120" stroke="#1C1C1C" stroke-width="1"/>
+                </g>
+
+                <g class="blueprint-furniture-loop">
+                    <rect x="40" y="35" width="40" height="25" rx="2" stroke="#1C1C1C" stroke-width="0.75" fill="#F1EFEA"/>
+                    <circle cx="60" cy="47.5" r="8" stroke="#C5A47E" stroke-width="0.75"/>
+                    <circle cx="150" cy="60" r="14" stroke="#1C1C1C" stroke-width="0.75" fill="#F1EFEA"/>
+                    <rect x="146" y="38" width="8" height="4" stroke="#1C1C1C" stroke-width="0.5"/>
+                    <rect x="146" y="78" width="8" height="4" stroke="#1C1C1C" stroke-width="0.5"/>
+                </g>
+
+                <g class="blueprint-crosshair-loop">
+                    <line x1="5" y1="100" x2="195" y2="100" stroke="#C5A47E" stroke-width="0.5" stroke-dasharray="4 4"/>
+                    <circle cx="120" cy="100" r="3" fill="#C5A47E"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="editorial-content-panel">
+            <span class="technical-tag">Index Error // 404</span>
+            <h1>Configuration Altered</h1>
+            <p>The space you are searching for is currently unmapped. Our blueprint parser is continuously looping grid matrices, but this specific room layout layout cannot be resolved.</p>
+
+            <div class="navigation-action-tray">
+                <button class="btn btn-charcoal" onclick="goToBaseRoot()">Return To Home</button>
+                <button class="btn btn-brass-outline" onclick="stepBackHistoryIndex()">Go Back</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        /**
+         * Home portal destination router
+         */
+        function goToBaseRoot() {
+            window.location.href = "index.html";
+        }
+
+        /**
+         * Stack-safe history memory trace router
+         */
+        function stepBackHistoryIndex() {
+            if (document.referrer) {
+                window.history.back();
+            } else {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

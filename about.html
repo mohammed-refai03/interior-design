@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | About Us</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+
+  <!-- Custom Luxury Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Page Transition Curtain -->
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain">
+    <div class="curtain-panel">
+      <div class="curtain-loader">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="curtain-logo">
+        <div class="curtain-spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar scrolled" id="mainNavbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="navLogo">
+        <img src="./assets/images/logo.webp" alt="Stackly Logo" class="logo-img">
+      </a>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="design.html" class="nav-link">Design</a>
+          <a href="about.html" class="nav-link active">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="login.html" class="nav-btn btn-login" id="loginNavBtn">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!-- 6 CONTENT SECTIONS IN ABOUT PAGE           -->
+  <!-- ========================================== -->
+
+  <!-- SECTION 1: Philosophy Intro Hero Section -->
+  <section class="page-hero-banner reveal reveal-up active">
+    <div class="page-hero-banner-bg">
+      <img src="./assets/images/about-bg.webp" alt="Philosophy Background">
+    </div>
+    <div class="page-hero-banner-content">
+      <div class="page-hero-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span>About</span>
+      </div>
+      <h1 class="page-hero-title">Our Passion & Philosophy</h1>
+      <p class="page-hero-desc">An elite design house shaping luxury estates and high-concept offices since 2011.</p>
+    </div>
+  </section>
+
+ 
+
+  <!-- SECTION 3: Studio Story -->
+  <section class="container section-padding">
+    <div class="story-grid">
+      <!-- Left Column: Portrait & Supporting images -->
+      <div class="story-images reveal reveal-left">
+        <div class="story-main-portrait">
+          <img src="./assets/images/about-founder.webp" alt="Founder Marcus Aurelius">
+        </div>
+        <div class="story-supporting-row">
+          <div class="story-offset-img">
+            <img src="./assets/images/hero-col-3.webp" alt="Marcus Aurelius on site visit">
+          </div>
+          <div class="story-offset-img">
+            <img src="./assets/images/about-story-sketch.webp" alt="Marcus Aurelius sketching design blueprints">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Founder text -->
+      <div class="story-content reveal reveal-right">
+        <span class="about-section-subtitle">OUR BEGINNING</span>
+        <h2 class="about-section-title">Born From a Shared Obsession With Home</h2>
+        <p class="about-intro-text">In 2012, after years of helping friends style their homes, Marcus noticed the same problem: beautiful spaces that didn't work for real life. The architectural beauty of a space was often compromised by rigid, uncomfortable furnishings, or functional utility was lost in pursuit of trends.</p>
+        <p class="about-intro-text">Today, Stackly Atelier creates homes that balance Scandinavian restraint with the warmth of daily living. We believe your spaces should grow with you, translating your story into permanent structures of comfort, grace, and timeless aesthetic depth.</p>
+        
+        <div class="about-signature-block">
+          <svg viewBox="0 0 200 100" class="signature-svg" style="width: 140px; height: 70px; color: var(--accent-gold-dark);">
+            <path d="M20,60 C40,40 60,70 80,30 C100,60 120,40 140,50 C160,60 180,20 190,50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <span class="signature-name">Marcus Aurelius</span>
+            <span class="signature-title">Founder & Principal Designer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Our Philosophy -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top:1px solid rgba(142,132,124,0.15); border-bottom:1px solid rgba(142,132,124,0.15);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 30px;" class="reveal reveal-up">
+        <span class="about-section-subtitle">WHAT WE BELIEVE</span>
+        <h2 class="word-reveal-heading reveal">
+          <span>Design</span> <span>Should</span> <span>Feel</span> <span>Effortless</span>
+        </h2>
+        <p class="about-intro-text" style="max-width: 700px; margin: 20px auto 0 auto; text-align: center;">We believe great interiors disappear into your life. They support your routines, reflect your story, and age beautifully.</p>
+      </div>
+
+      <div class="philosophy-cards-grid">
+        <!-- Card 1: Intentional -->
+        <div class="philosophy-card-item reveal reveal-up">
+          <div class="philosophy-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88" />
+            </svg>
+          </div>
+          <h4 class="philosophy-card-title">Intentional</h4>
+          <p class="philosophy-card-desc">Every choice serves a function. No filler, no trends for trends’ sake. We design for clarity and purpose.</p>
+        </div>
+
+        <!-- Card 2: Enduring -->
+        <div class="philosophy-card-item reveal reveal-up delay-1">
+          <div class="philosophy-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3a9 9 0 0 0-9 9c0 3.3 2.7 6 6 6h6a9 9 0 0 0 9-9 9 9 0 0 0-9-9Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12c4 0 7 3 9 6 M12 3c0 4 3 7 6 9" />
+            </svg>
+          </div>
+          <h4 class="philosophy-card-title">Enduring</h4>
+          <p class="philosophy-card-desc">We specify materials and layouts that look better in 10 years, not worse. Timeless timber, stone, and layout design.</p>
+        </div>
+
+        <!-- Card 3: Personal -->
+        <div class="philosophy-card-item reveal reveal-up delay-2">
+          <div class="philosophy-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+            </svg>
+          </div>
+          <h4 class="philosophy-card-title">Personal</h4>
+          <p class="philosophy-card-desc">Your home should tell your story, not ours. We listen first, curating spaces around your habits and memories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Sourcing & Material Testing Lab Section -->
+  <section class="section-padding" style="background-color: var(--bg-primary); border-top:1px solid rgba(142,132,124,0.15); border-bottom:1px solid rgba(142,132,124,0.15);">
+    <div class="container split-grid-2-1">
+      <div class="reveal reveal-left">
+        <span class="about-section-subtitle">THE ATELIER LABORATORY</span>
+        <h2 class="about-section-title">BEYOND SURFACE BEAUTY</h2>
+        <p class="about-intro-text" style="margin-bottom:20px;">Every panel of teak and block of marble that enters our portfolio undergoes strict density, color consistency, and durability testing in our Design District lab. We maintain direct relations with quarries in Italy and sustainable forestry estates in Scandinavia.</p>
+        <ul class="service-features-list" style="display:grid; gap:12px;">
+          <li>Zero-emission veneer testing</li>
+          <li>Acoustic absorption benchmarking</li>
+          <li>Moisture-resistant oil formulations</li>
+        </ul>
+      </div>
+      <div class="reveal reveal-right" style="position:relative; border-radius:var(--border-radius-md); overflow:hidden; height: 350px;">
+        <img src="./assets/images/about-lab.webp" alt="Materials selection lab" style="width:100%; height:100%; object-fit:cover;">
+      </div>
+    </div>
+  </section>
+
+  
+  
+
+  <!-- SECTION 5: Journey Milestone Timeline Section -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top:1px solid rgba(142,132,124,0.15); border-bottom:1px solid rgba(142,132,124,0.15);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+        <span class="about-section-subtitle">OUR JOURNEY</span>
+        <h2 class="about-section-title">STUDIO EVOLUTION</h2>
+      </div>
+
+      <div class="awards-timeline reveal reveal-up">
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-point left">
+          <div class="point-marker"></div>
+          <div class="point-card card-luxury">
+            <span class="point-year">2025</span>
+            <h4 class="point-title">International Supply Channels</h4>
+            <p class="point-text">Partnered with certified European stone quarries and timber collectives to secure exclusive, direct sourcing pipelines for premium projects.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-point right">
+          <div class="point-marker"></div>
+          <div class="point-card card-luxury">
+            <span class="point-year">2022</span>
+            <h4 class="point-title">Soho Atelier Workspace</h4>
+            <p class="point-text">Established our primary creative design studio and custom materials laboratory inside a historic Soho cast-iron loft in New York.</p>
+          </div>
+        </div>
+
+        <div class="timeline-point left">
+          <div class="point-marker"></div>
+          <div class="point-card card-luxury">
+            <span class="point-year">2018</span>
+            <h4 class="point-title">Studio Foundation</h4>
+            <p class="point-text">Founded by Marcus Aurelius with a core design committee, setting out to bridge natural organic warmth with contemporary spatial functionality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Studio By The Numbers -->
+  <section class="container section-padding">
+    <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+      <span class="about-section-subtitle">METRICS OF TRUST</span>
+      <h2 class="about-section-title">STUDIO BY THE NUMBERS</h2>
+    </div>
+
+    <div class="numbers-grid">
+      <!-- Card 1 -->
+      <div class="number-card reveal reveal-scale">
+        <span class="number-counter"><span class="counter" data-target="150">0</span>+</span>
+        <span class="number-label">Projects Completed</span>
+      </div>
+      <!-- Card 2 -->
+      <div class="number-card reveal reveal-scale delay-1">
+        <span class="number-counter"><span class="counter" data-target="12">0</span></span>
+        <span class="number-label">Years Experience</span>
+      </div>
+      <!-- Card 3 -->
+      <div class="number-card reveal reveal-scale delay-2">
+        <span class="number-counter"><span class="counter" data-target="20">0</span></span>
+        <span class="number-label">Cities Served</span>
+      </div>
+      <!-- Card 4 -->
+      <div class="number-card reveal reveal-scale delay-3">
+        <span class="number-counter"><span class="counter" data-target="98">0</span>%</span>
+        <span class="number-label">Client Referral Rate</span>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- SECTION 9: Awards & Certifications -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top:1px solid rgba(142,132,124,0.15); border-bottom:1px solid rgba(142,132,124,0.15);">
+    <div class="container">
+      <div class="recognition-grid">
+        <!-- Left Column: Awards -->
+        <div class="awards-column reveal reveal-left">
+          <span class="about-section-subtitle">ACCOLADES</span>
+          <h3 class="about-section-title" style="font-size: 2.25rem; margin-bottom: 20px;">Awards</h3>
+          <div class="awards-grid-showcase">
+            <!-- Award 1 -->
+            <div class="award-grid-card reveal reveal-up">
+              <span class="award-card-year">2024</span>
+              <div class="award-card-divider"></div>
+              <h4 class="award-card-name">AD100 Laurels</h4>
+              <p class="award-card-authority">Architectural Digest</p>
+              <span class="award-card-desc">Recognized among the top 100 global design and architecture visionaries.</span>
+            </div>
+            <!-- Award 2 -->
+            <div class="award-grid-card reveal reveal-up delay-1">
+              <span class="award-card-year">2023</span>
+              <div class="award-card-divider"></div>
+              <h4 class="award-card-name">Best of Design</h4>
+              <p class="award-card-authority">Houzz Editorial</p>
+              <span class="award-card-desc">Awarded for high-rating user satisfaction and excellence in residential remodeling.</span>
+            </div>
+            <!-- Award 3 -->
+            <div class="award-grid-card reveal reveal-up delay-2">
+              <span class="award-card-year">2022</span>
+              <div class="award-card-divider"></div>
+              <h4 class="award-card-name">Designer of Year</h4>
+              <p class="award-card-authority">Luxe Interiors</p>
+              <span class="award-card-desc">Selected for vanguard material integration in coastal penthouse layouts.</span>
+            </div>
+            <!-- Award 4 -->
+            <div class="award-grid-card reveal reveal-up delay-3">
+              <span class="award-card-year">2021</span>
+              <div class="award-card-divider"></div>
+              <h4 class="award-card-name">Kitchen & Bath</h4>
+              <p class="award-card-authority">NKBA Assoc.</p>
+              <span class="award-card-desc">Honored for sustainable stone installation and ergonomic traffic planning.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Award-Winning Project Featured Image -->
+        <div class="awards-media-column reveal reveal-right" style="position: relative; border-radius: var(--border-radius-md); overflow: hidden; min-height: 400px; box-shadow: 0 20px 40px rgba(30, 26, 23, 0.08); border: 1px solid rgba(197, 168, 128, 0.15);">
+          <img src="./assets/images/about-penthouse.webp" alt="Award Winning Loft Design" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(to top, rgba(30, 26, 23, 0.9) 0%, rgba(30, 26, 23, 0.4) 60%, rgba(30, 26, 23, 0) 100%); padding: 35px; color: var(--bg-primary);">
+            <span style="font-size: 0.6875rem; font-weight: 700; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 8px;">FEATURED SHOWCASE</span>
+            <h4 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 500; color: var(--bg-white); line-height: 1.2; margin-bottom: 4px;">Aetheria Penthouse Loft</h4>
+            <p style="font-size: 0.8125rem; color: rgba(255, 255, 255, 0.7); line-height: 1.4; margin: 0;">Winner of the Best Luxury Residential Design and highlighted in the AD100 list.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- SECTION 9: The Stackly Atelier Manifesto -->
+  <section class="container section-padding" style="padding-bottom:80px; text-align:center;">
+    <div class="reveal reveal-scale" style="max-width:800px; margin:0 auto; padding:40px;">
+      <span class="about-section-subtitle" style="display:block; margin-bottom:16px;">THE MANIFESTO</span>
+      <h2 style="font-family:var(--font-heading); font-size:2.5rem; font-weight:300; line-height:1.3; text-transform:uppercase; color:var(--text-primary);">
+        "WE DO NOT SIMPLY ARRANGE FURNITURE.<br>
+        WE TRANSLATE LIFE INTO STRUCTURES OF<br>
+        <span style="color:var(--accent-gold-dark);">PERMANENT ELEGANCE & DEPTH</span>."
+      </h2>
+      <p style="font-size:0.875rem; color:var(--text-secondary); max-width:550px; margin:24px auto 0 auto; line-height:1.6;">Our design philosophy is anchored in materials integrity, ergonomic traffic flow, and bespoke customization. We design for the sensory dialogue between comfort and modern sophistication.</p>
+      <div style="margin-top:30px; display:inline-flex; align-items:center; gap:12px;">
+        <a href="index.html"><img src="./assets/images/logo.webp" alt="Stackly Logo" style="height: 28px; width: auto; object-fit: contain; vertical-align: middle;"></a>
+     </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- SECTION 8: Global Client Footprint (Design Districts) -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top:1px solid rgba(142,132,124,0.15); border-bottom:1px solid rgba(142,132,124,0.15);">
+    <div class="container split-grid-1-2">
+      <div class="reveal reveal-left">
+        <span class="about-section-subtitle">OUR REACH</span>
+        <h2 class="about-section-title">GLOBAL INFLUENCE</h2>
+        <p class="about-intro-text">Stackly shapes luxury environments across major architectural capitals. With designer committees active in New York, London, Paris, and Milan, we source from and deliver projects to a sophisticated international clientele.</p>
+        <div class="grid-cols-2" style="margin-top:24px;">
+          <div>
+            <h4 style="font-family:var(--font-heading); font-size:2.25rem; color:var(--accent-gold-dark); font-weight:600; line-height:1;">4+</h4>
+            <span style="font-size:0.75rem; color:var(--text-light); text-transform:uppercase; font-weight:600;">Global Hubs</span>
+          </div>
+          <div>
+            <h4 style="font-family:var(--font-heading); font-size:2.25rem; color:var(--accent-gold-dark); font-weight:600; line-height:1;">12+</h4>
+            <span style="font-size:0.75rem; color:var(--text-light); text-transform:uppercase; font-weight:600;">Countries Served</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-right" style="position:relative; border-radius:var(--border-radius-md); overflow:hidden; height: 320px;">
+        <img src="./assets/images/about-map.webp" alt="Global luxury properties map mockup" style="width:100%; height:100%; object-fit:cover; filter: grayscale(0.8) sepia(0.2) contrast(1.15);">
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(30,26,23,0.35); display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; padding:24px; color:#ffffff;">
+          <h4 style="font-family:var(--font-heading); font-size:1.75rem; font-weight:300; letter-spacing:1px; text-transform:uppercase; color: var(--bg-white)">Paris • London • Milan • Tokyo</h4>
+          <span style="font-size:0.75rem; text-transform:uppercase;  margin-top:8px; letter-spacing:2px;">Signature International Residences</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Creative Atelier Team Section -->
+  <section class="container section-padding">
+    <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+      <span class="about-section-subtitle">THE ATELIER TEAM</span>
+      <h2 class="about-section-title">CREATIVE MINDS</h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card card-luxury reveal reveal-up">
+        <div class="team-img-wrapper">
+          <img src="./assets/images/team-1.webp" alt="Marcus Aurelius">
+          <div class="team-social-overlay">
+            <a href="404.html" aria-label="LinkedIn" class="team-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="404.html" aria-label="Instagram" class="team-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="404.html" aria-label="Pinterest" class="team-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M12 2C6.478 2 2 6.478 2 12c0 4.17 2.565 7.747 6.24 9.22-.092-.778-.175-1.975.037-2.827.19-.77 1.24-5.26 1.24-5.26s-.317-.638-.317-1.58c0-1.48.858-2.585 1.925-2.585.91 0 1.348.68 1.348 1.498 0 .913-.58 2.28-.88 3.548-.25 1.06.53 1.922 1.572 1.922 1.89 0 3.34-1.993 3.34-4.872 0-2.547-1.83-4.327-4.444-4.327-3.028 0-4.805 2.27-4.805 4.618 0 .915.353 1.897.794 2.427.087.106.1.198.074.306-.08.337-.26 1.06-.296 1.205-.046.19-.153.23-.353.136-1.32-.614-2.147-2.544-2.147-4.093 0-3.33 2.42-6.39 6.98-6.39 3.664 0 6.51 2.612 6.51 6.1 0 3.642-2.3 6.574-5.49 6.574-1.07 0-2.08-.558-2.425-1.213l-.66 2.518c-.24.91-.886 2.05-1.32 2.76 1 .307 2.062.473 3.16.473 5.522 0 10-4.478 10-10S17.522 2 12 2z"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4 class="team-name">Marcus Aurelius</h4>
+          <span class="team-role">Principal Atelier Designer</span>
+        </div>
+      </div>
+      <div class="team-card card-luxury reveal reveal-up delay-1">
+        <div class="team-img-wrapper">
+          <img src="./assets/images/team-2.webp" alt="Elara Croft">
+          <div class="team-social-overlay">
+            <a href="404.html" aria-label="LinkedIn" class="team-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="404.html" aria-label="Instagram" class="team-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="404.html" aria-label="Pinterest" class="team-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M12 2C6.478 2 2 6.478 2 12c0 4.17 2.565 7.747 6.24 9.22-.092-.778-.175-1.975.037-2.827.19-.77 1.24-5.26 1.24-5.26s-.317-.638-.317-1.58c0-1.48.858-2.585 1.925-2.585.91 0 1.348.68 1.348 1.498 0 .913-.58 2.28-.88 3.548-.25 1.06.53 1.922 1.572 1.922 1.89 0 3.34-1.993 3.34-4.872 0-2.547-1.83-4.327-4.444-4.327-3.028 0-4.805 2.27-4.805 4.618 0 .915.353 1.897.794 2.427.087.106.1.198.074.306-.08.337-.26 1.06-.296 1.205-.046.19-.153.23-.353.136-1.32-.614-2.147-2.544-2.147-4.093 0-3.33 2.42-6.39 6.98-6.39 3.664 0 6.51 2.612 6.51 6.1 0 3.642-2.3 6.574-5.49 6.574-1.07 0-2.08-.558-2.425-1.213l-.66 2.518c-.24.91-.886 2.05-1.32 2.76 1 .307 2.062.473 3.16.473 5.522 0 10-4.478 10-10S17.522 2 12 2z"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4 class="team-name">Elara Croft</h4>
+          <span class="team-role">Architectural Design Lead</span>
+        </div>
+      </div>
+      <div class="team-card card-luxury reveal reveal-up delay-2">
+        <div class="team-img-wrapper">
+          <img src="./assets/images/team-3.webp" alt="Clara Oswald">
+          <div class="team-social-overlay">
+            <a href="404.html" aria-label="LinkedIn" class="team-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="404.html" aria-label="Instagram" class="team-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="404.html" aria-label="Pinterest" class="team-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M12 2C6.478 2 2 6.478 2 12c0 4.17 2.565 7.747 6.24 9.22-.092-.778-.175-1.975.037-2.827.19-.77 1.24-5.26 1.24-5.26s-.317-.638-.317-1.58c0-1.48.858-2.585 1.925-2.585.91 0 1.348.68 1.348 1.498 0 .913-.58 2.28-.88 3.548-.25 1.06.53 1.922 1.572 1.922 1.89 0 3.34-1.993 3.34-4.872 0-2.547-1.83-4.327-4.444-4.327-3.028 0-4.805 2.27-4.805 4.618 0 .915.353 1.897.794 2.427.087.106.1.198.074.306-.08.337-.26 1.06-.296 1.205-.046.19-.153.23-.353.136-1.32-.614-2.147-2.544-2.147-4.093 0-3.33 2.42-6.39 6.98-6.39 3.664 0 6.51 2.612 6.51 6.1 0 3.642-2.3 6.574-5.49 6.574-1.07 0-2.08-.558-2.425-1.213l-.66 2.518c-.24.91-.886 2.05-1.32 2.76 1 .307 2.062.473 3.16.473 5.522 0 10-4.478 10-10S17.522 2 12 2z"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4 class="team-name">Clara Oswald</h4>
+          <span class="team-role">Bespoke Styling Director</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  <!-- SECTION 11: Client Success Stories -->
+  <section class="section-padding" style="background-color: var(--bg-primary); border-top:1px solid rgba(142,132,124,0.15); border-bottom:1px solid rgba(142,132,124,0.15);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal reveal-up">
+        <span class="about-section-subtitle">CASE STUDIES</span>
+        <h2 class="about-section-title">CLIENT SUCCESS STORIES</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">Real narratives of architectural and design transformations, detailing the vision, process, and functional results achieved.</p>
+      </div>
+
+      <div class="about-testimonial-slider reveal reveal-scale" style="max-width: 800px; margin: 0 auto; position: relative; min-height: 300px; background: var(--bg-white); border: 1px solid rgba(197, 168, 128, 0.15); border-radius: var(--border-radius-lg); padding: 50px 80px; text-align: center; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; box-shadow: 0 15px 40px rgba(30, 26, 23, 0.04);">
+        
+        <!-- Slide 1 -->
+        <div class="about-testimonial-slide active">
+          <span class="quote-icon" style="font-family: var(--font-heading); font-size: 5rem; line-height: 1; color: var(--accent-gold); display: block; height: 40px; margin-bottom: 10px; opacity: 0.7;">“</span>
+          <p class="testimonial-quote" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 300; color: var(--text-primary); line-height: 1.5; margin-bottom: 24px; font-style: italic;">
+            We wanted a home that embraced the Pacific coast without sacrificing interior warmth. Marcus and his design team restructured the entire main living space, eliminating visual barriers to integrate panoramic sights with custom teak cladding. The result is a spatial dialogue that functions perfectly for our family retreats.
+          </p>
+          <span class="testimonial-author" style="font-family: var(--font-body); font-weight: 700; font-size: 0.9375rem; color: var(--text-primary); text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 4px;">Eleanor Vance</span>
+          <span class="testimonial-role" style="font-family: var(--font-body); font-size: 0.75rem; color: var(--accent-gold-dark); text-transform: uppercase; letter-spacing: 1.5px; display: block;">Coastal Estate Owner — Malibu Cliffside Villa</span>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="about-testimonial-slide">
+          <span class="quote-icon" style="font-family: var(--font-heading); font-size: 5rem; line-height: 1; color: var(--accent-gold); display: block; height: 40px; margin-bottom: 10px; opacity: 0.7;">“</span>
+          <p class="testimonial-quote" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 300; color: var(--text-primary); line-height: 1.5; margin-bottom: 24px; font-style: italic;">
+            Stackly understood that a luxury cafe is about physical branding. They curated custom brass accents, sandblasted raw concrete structures, and designed a multi-level lighting loop that sets a luxurious mood. Our customer traffic and social engagement increased by 45% within three months of relaunching the space.
+          </p>
+          <span class="testimonial-author" style="font-family: var(--font-body); font-weight: 700; font-size: 0.9375rem; color: var(--text-primary); text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 4px;">Aroma Hospitality Group</span>
+          <span class="testimonial-role" style="font-family: var(--font-body); font-size: 0.75rem; color: var(--accent-gold-dark); text-transform: uppercase; letter-spacing: 1.5px; display: block;">Showroom Founders — The Golden Bean Showroom</span>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="about-testimonial-slide">
+          <span class="quote-icon" style="font-family: var(--font-heading); font-size: 5rem; line-height: 1; color: var(--accent-gold); display: block; height: 40px; margin-bottom: 10px; opacity: 0.7;">“</span>
+          <p class="testimonial-quote" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 300; color: var(--text-primary); line-height: 1.5; margin-bottom: 24px; font-style: italic;">
+            Our new Vanguard Corporate office design has completely transformed how our teams collaborate. The biophilic elements, acoustics, and modular hot-desking setups feel highly modern yet incredibly comfortable and functional. It has boosted our team's daily productivity by at least 20%.
+          </p>
+          <span class="testimonial-author" style="font-family: var(--font-body); font-weight: 700; font-size: 0.9375rem; color: var(--text-primary); text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 4px;">Vanguard Corporation</span>
+          <span class="testimonial-role" style="font-family: var(--font-body); font-size: 0.75rem; color: var(--accent-gold-dark); text-transform: uppercase; letter-spacing: 1.5px; display: block;">Executive Management — Corporate Hub Project</span>
+        </div>
+
+        <!-- Slider dots indicators -->
+        <div class="about-slider-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: 24px;">
+          <span class="about-dot active" style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--accent-gold); cursor: pointer; transition: all 0.3s;"></span>
+          <span class="about-dot" style="width: 8px; height: 8px; border-radius: 50%; background-color: rgba(142, 132, 124, 0.3); cursor: pointer; transition: all 0.3s;"></span>
+          <span class="about-dot" style="width: 8px; height: 8px; border-radius: 50%; background-color: rgba(142, 132, 124, 0.3); cursor: pointer; transition: all 0.3s;"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo" style="margin-bottom: 20px;">
+          <a href="index.html" style="display: inline-block;"><img src="./assets/images/logo.webp" alt="Stackly Logo" class="logo-img"></a>
+        </div>
+        <p class="footer-desc">Crafting refined, bespoke interiors that blend functionality and modern aesthetics. Your vision, realized with timeless sophistication.</p>
+        <div class="social-links">
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="404.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="design.html">Design Portfolio</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Insights & Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Our Services</h4>
+        <ul>
+          <li><a href="services.html">Space Planning</a></li>
+          <li><a href="services.html">Residential Styling</a></li>
+          <li><a href="services.html">Commercial Interiors</a></li>
+          <li><a href="services.html">Furniture Curation</a></li>
+          <li><a href="services.html">Lighting & Acoustics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-title">Contact</h4>
+        <p class="contact-info" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; line-height: 1.4;">
+          <i class="fa-solid fa-map-pin" style="color: var(--accent-gold); margin-top: 3px;"></i>
+          <span>500 Luxury Lane, Design District<br>New York, NY 10013</span>
+        </p>
+        <p class="contact-info" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+          <i class="fa-solid fa-phone" style="color: var(--accent-gold); font-size: 0.85rem;"></i>
+          <span>+1 (212) 555-8900</span>
+        </p>
+        <p class="contact-info" style="display: flex; align-items: center; gap: 10px;">
+          <i class="fa-solid fa-envelope" style="color: var(--accent-gold); font-size: 0.85rem;"></i>
+          <a href="mailto:atelier@stackly.com" style="color: inherit; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='inherit'">atelier@stackly.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 STACKLY Atelier. All rights reserved. Premium Design Experience.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module">
+    import db from './js/data.js';
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Sync login text
+      const user = db.getCurrentUser();
+      const loginBtn = document.getElementById("loginNavBtn");
+      if (loginBtn && user) {
+        loginBtn.textContent = "Dashboard";
+        loginBtn.setAttribute("href", user.role === 'admin' ? "dashboard-admin.html" : "dashboard-user.html");
+        loginBtn.classList.add("btn-cta");
+        loginBtn.classList.remove("btn-login");
+      }
+
+      // Add styles specifically for about milestones if not exist
+      if (!document.getElementById("aboutStyle")) {
+        const style = document.createElement("style");
+        style.id = "aboutStyle";
+        style.textContent = `
+          .about-values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+          }
+          .value-card {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+          }
+          .value-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+          .value-text {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+          }
+          .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+          }
+          .team-card {
+            display: flex;
+            flex-direction: column;
+          }
+          .team-img-wrapper {
+            height: 380px;
+            overflow: hidden;
+            position: relative;
+          }
+          .team-social-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(30, 26, 23, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+            z-index: 5;
+          }
+          .team-card:hover .team-social-overlay {
+            opacity: 1;
+            pointer-events: auto;
+          }
+          .team-social-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateY(15px);
+          }
+          .team-card:hover .team-social-link {
+            transform: translateY(0);
+          }
+          .team-social-link:hover {
+            background-color: var(--accent-gold);
+            color: var(--text-white);
+            transform: translateY(-4px) !important;
+          }
+          .team-social-link:nth-child(2) {
+            transition-delay: 0.05s;
+          }
+          .team-social-link:nth-child(3) {
+            transition-delay: 0.1s;
+          }
+          .social-svg-icon {
+            width: 20px;
+            height: 20px;
+          }
+          .team-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+          }
+          .team-card:hover .team-img-wrapper img {
+            transform: scale(1.05);
+          }
+          .team-info {
+            padding: 24px;
+            text-align: center;
+          }
+          .team-name {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+          }
+          .team-role {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-gold-dark);
+            font-weight: 500;
+          }
+          .awards-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+          }
+          .timeline-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: rgba(142, 132, 124, 0.2);
+            transform: translateX(-50%);
+          }
+          .timeline-point {
+            display: flex;
+            width: 50%;
+            position: relative;
+            margin-bottom: 40px;
+          }
+          .timeline-point.left {
+            left: 0;
+            justify-content: flex-end;
+            padding-right: 40px;
+          }
+          .timeline-point.right {
+            left: 50%;
+            justify-content: flex-start;
+            padding-left: 40px;
+          }
+          .point-marker {
+            position: absolute;
+            top: 30px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--accent-gold);
+            border: 4px solid var(--bg-primary);
+            box-shadow: 0 0 0 2px var(--accent-gold);
+            z-index: 2;
+          }
+          .timeline-point.left .point-marker {
+            right: -8px;
+          }
+          .timeline-point.right .point-marker {
+            left: -8px;
+          }
+          .point-card {
+            padding: 24px;
+            max-width: 320px;
+            width: 100%;
+          }
+          .point-year {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-gold-dark);
+            display: block;
+            margin-bottom: 8px;
+          }
+          .point-title {
+            font-weight: 600;
+            font-size: 0.9375rem;
+            margin-bottom: 6px;
+          }
+          .point-text {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+          }
+          @media(max-width: 992px) {
+            .about-values-grid {
+              grid-template-columns: 1fr;
+            }
+            .team-grid {
+              grid-template-columns: 1fr;
+            }
+            .team-img-wrapper {
+              height: 450px;
+            }
+          }
+          @media(max-width: 768px) {
+            .timeline-line {
+              left: 20px;
+            }
+            .timeline-point {
+              width: 100%;
+              padding-left: 40px !important;
+              padding-right: 0 !important;
+              left: 0 !important;
+              justify-content: flex-start;
+            }
+            .timeline-point.left .point-marker,
+            .timeline-point.right .point-marker {
+              left: 12px;
+              right: auto;
+            }
+            .point-card {
+              max-width: 100%;
+            }
+          }
+        `;
+        document.head.appendChild(style);
+      }
+
+      // Initialize staggered word reveal transition delays
+      const heading = document.querySelector('.word-reveal-heading');
+      if (heading) {
+        const spans = heading.querySelectorAll('span');
+        spans.forEach((span, index) => {
+          span.style.transitionDelay = `${index * 0.15}s`;
+        });
+      }
+
+      // Initialize counter count-up animation on viewport entry
+      const counters = document.querySelectorAll(".counter");
+      const numbersSection = document.querySelector(".numbers-grid");
+      if (counters.length > 0 && numbersSection) {
+        const observerOptions = {
+          threshold: 0.5
+        };
+
+        const startCounterAnimation = (counterElement) => {
+          const target = parseInt(counterElement.getAttribute("data-target"), 10);
+          const duration = 1500; // 1.5s animation duration
+          const startTime = performance.now();
+
+          const updateCounter = (currentTime) => {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1);
+            
+            // easeOutQuad transition easing
+            const easedProgress = progress * (2 - progress);
+            const currentValue = Math.floor(easedProgress * target);
+
+            counterElement.textContent = currentValue;
+
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else {
+              counterElement.textContent = target; // Ensure exact final value
+            }
+          };
+
+          requestAnimationFrame(updateCounter);
+        };
+
+        const observer = new IntersectionObserver((entries, self) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              counters.forEach(counter => startCounterAnimation(counter));
+              self.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+
+        observer.observe(numbersSection);
+      }
+
+      // Bind custom cursor hover effects on new interactive elements
+      const newHoverables = document.querySelectorAll(".awards-media-column, .philosophy-card-item, .story-offset-img, .number-card, .about-testimonial-slider");
+      newHoverables.forEach(el => {
+        el.addEventListener("mouseenter", () => {
+          document.body.classList.add("cursor-hover");
+        });
+        el.addEventListener("mouseleave", () => {
+          document.body.classList.remove("cursor-hover");
+        });
+      });
+
+      // About Page Testimonials Auto-Slider
+      const aboutSlides = document.querySelectorAll(".about-testimonial-slide");
+      const aboutDots = document.querySelectorAll(".about-dot");
+      if (aboutSlides.length > 0 && aboutDots.length > 0) {
+        let currentIndex = 0;
+        let slideInterval;
+
+        const showSlide = (index) => {
+          aboutSlides.forEach(slide => slide.classList.remove("active"));
+          aboutDots.forEach(dot => dot.classList.remove("active"));
+          
+          aboutSlides[index].classList.add("active");
+          aboutDots[index].classList.add("active");
+          currentIndex = index;
+        };
+
+        const nextSlide = () => {
+          const nextIndex = (currentIndex + 1) % aboutSlides.length;
+          showSlide(nextIndex);
+        };
+
+        const startAutoplay = () => {
+          slideInterval = setInterval(nextSlide, 5000); // transition every 5s
+        };
+
+        const stopAutoplay = () => {
+          clearInterval(slideInterval);
+        };
+
+        aboutDots.forEach((dot, idx) => {
+          dot.addEventListener("click", () => {
+            showSlide(idx);
+            stopAutoplay();
+            startAutoplay(); // Reset interval on interaction
+          });
+        });
+
+        startAutoplay();
+      }
+    });
+  </script>
+</body>
+</html>
+

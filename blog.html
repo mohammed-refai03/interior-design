@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly | Design Journal</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/pages.css" />
+  </head>
+  <body>
+    <!-- Custom Luxury Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+    <!-- Page Transition Curtain -->
+    <!-- Page Transition Curtain -->
+    <div class="page-curtain" id="pageCurtain">
+      <div class="curtain-panel">
+        <div class="curtain-loader">
+          <img
+            src="./assets/images/logo.webp"
+            alt="Stackly Logo"
+            class="curtain-logo"
+          />
+          <div class="curtain-spinner"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar scrolled" id="mainNavbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo" id="navLogo">
+          <img
+            src="./assets/images/logo.webp"
+            alt="Stackly Logo"
+            class="logo-img"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="design.html" class="nav-link">Design</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link active">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <a href="login.html" class="nav-btn btn-login" id="loginNavBtn"
+              >Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- 6 CONTENT SECTIONS IN BLOG PAGE            -->
+    <!-- ========================================== -->
+
+    <!-- SECTION 1: Blog Hero Banner Section -->
+    <section class="page-hero-banner reveal reveal-up active">
+      <div class="page-hero-banner-bg">
+        <img src="./assets/images/blog-bg.webp" alt="Blog Background" />
+      </div>
+      <div class="page-hero-banner-content">
+        <div class="page-hero-breadcrumbs">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span>Blog</span>
+        </div>
+        <h1 class="page-hero-title">Insights & Journal</h1>
+        <p class="page-hero-desc">
+          Browse architectural styling guidelines, space planning tips, and
+          project updates written by our atelier designers.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Post Section -->
+    <section class="container" style="padding-top: 60px; padding-bottom: 40px">
+      <!-- Highlighted Article Card -->
+      <div
+        class="card-luxury split-grid-2-1 reveal reveal-scale active"
+        style="
+          border-radius: var(--border-radius-lg);
+          overflow: hidden;
+          cursor: pointer;
+        "
+        id="featuredPostCard"
+      >
+        <div style="height: 350px">
+          <img
+            src="./assets/images/image-new-2.webp"
+            alt="Textures blog highlight"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div
+          style="
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+          "
+        >
+          <div class="blog-meta">
+            <span>By Elara Croft</span>
+            <span>•</span>
+            <span>June 12, 2026</span>
+            <span>•</span>
+            <span style="color: var(--accent-gold-dark); font-weight: 600"
+              >DESIGN TIPS</span
+            >
+          </div>
+          <h3
+            style="
+              font-family: var(--font-heading);
+              font-size: 2rem;
+              line-height: 1.2;
+            "
+          >
+            The Art of Layering Textures in Modern Interiors
+          </h3>
+          <p
+            style="
+              font-size: 0.875rem;
+              color: var(--text-secondary);
+              line-height: 1.5;
+            "
+          >
+            Learn how to combine leather, boucle, metals, and raw oak to create
+            rich visual depth in neutral rooms.
+          </p>
+          <span
+            style="
+              font-weight: 600;
+              font-size: 0.8125rem;
+              color: var(--accent-gold-dark);
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-top: 10px;
+            "
+            >Read Article &rarr;</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Search and Category Filter Pills -->
+    <section class="container" style="padding-bottom: 30px">
+      <div
+        class="blog-controls split-grid-1-1 reveal reveal-up active"
+        <div class="form-group" style="margin-bottom: 0">
+          <input
+            type="text"
+            class="form-control"
+            id="blogSearch"
+            placeholder=" "
+            required
+          />
+          <label class="form-label" for="blogSearch">Search articles...</label>
+        </div>
+
+        <div class="blog-tags" id="blogTagsWrapper">
+          <button class="filter-btn active" data-tag="all">All</button>
+          <button class="filter-btn" data-tag="design tips">Design Tips</button>
+          <button class="filter-btn" data-tag="space planning">
+            Space Planning
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Atelier Journal Grid Section -->
+    <section class="container" style="padding-bottom: 60px">
+      <div class="blog-grid" id="blogGrid">
+        <!-- Generated dynamically in script below -->
+      </div>
+    </section>
+
+    <!-- SECTION 5: Designer Micro-Blogs & Tips Column -->
+    <section class="container section-padding">
+      <div
+        class="split-grid-1-2"
+        style="
+          align-items: center;
+        "
+      >
+        <div class="reveal reveal-left">
+          <span class="about-section-subtitle">DESIGNER'S DESK</span>
+          <h2 class="about-section-title">QUICK STYLING TIPS</h2>
+          <p
+            style="
+              font-size: 0.875rem;
+              color: var(--text-secondary);
+              line-height: 1.6;
+              margin-top: 12px;
+            "
+          >
+            Principal designer Marcus Aurelius answers structural questions and
+            outlines design formulas monthly.
+          </p>
+        </div>
+
+        <div
+          class="card-luxury reveal reveal-right"
+          style="padding: 40px; border-left: 4px solid var(--accent-gold)"
+        >
+          <span
+            style="
+              font-size: 0.75rem;
+              font-weight: 700;
+              color: var(--accent-gold-dark);
+              text-transform: uppercase;
+              letter-spacing: 1.5px;
+              display: block;
+              margin-bottom: 12px;
+            "
+            >Rule of Proportions</span
+          >
+          <p
+            style="
+              font-family: var(--font-heading);
+              font-size: 1.375rem;
+              font-style: italic;
+              line-height: 1.5;
+              color: var(--text-primary);
+              margin-bottom: 20px;
+            "
+          >
+            "Never match the wood tones of your dining table exactly to your
+            floor. Introduce at least two shades of contrast, or anchor the
+            table with a soft neutral wool rug to create spatial boundaries."
+          </p>
+          <span
+            style="
+              font-weight: 600;
+              font-size: 0.8125rem;
+              text-transform: uppercase;
+              color: var(--text-secondary);
+              letter-spacing: 1px;
+            "
+            >— Marcus Aurelius</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Details Modal Container -->
+    <div id="blogDetailModal" class="project-modal" style="display: none"></div>
+
+    <!-- Shared Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo" style="margin-bottom: 20px">
+            <a href="index.html" style="display: inline-block"
+              ><img
+                src="./assets/images/logo.webp"
+                alt="Stackly Logo"
+                class="logo-img"
+            /></a>
+          </div>
+          <p class="footer-desc">
+            Crafting refined, bespoke interiors that blend functionality and
+            modern aesthetics. Your vision, realized with timeless
+            sophistication.
+          </p>
+          <div class="social-links">
+            <a href="404.html" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="404.html" aria-label="Pinterest"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+            <a href="404.html" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="404.html" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-title">Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="design.html">Design Portfolio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Insights & Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-title">Our Services</h4>
+          <ul>
+            <li><a href="services.html">Space Planning</a></li>
+            <li><a href="services.html">Residential Styling</a></li>
+            <li><a href="services.html">Commercial Interiors</a></li>
+            <li><a href="services.html">Furniture Curation</a></li>
+            <li><a href="services.html">Lighting & Acoustics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact</h4>
+          <p
+            class="contact-info"
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 10px;
+              margin-bottom: 12px;
+              line-height: 1.4;
+            "
+          >
+            <i
+              class="fa-solid fa-map-pin"
+              style="color: var(--accent-gold); margin-top: 3px"
+            ></i>
+            <span
+              >500 Luxury Lane, Design District<br />New York, NY 10013</span
+            >
+          </p>
+          <p
+            class="contact-info"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-bottom: 8px;
+            "
+          >
+            <i
+              class="fa-solid fa-phone"
+              style="color: var(--accent-gold); font-size: 0.85rem"
+            ></i>
+            <span>+1 (212) 555-8900</span>
+          </p>
+          <p
+            class="contact-info"
+            style="display: flex; align-items: center; gap: 10px"
+          >
+            <i
+              class="fa-solid fa-envelope"
+              style="color: var(--accent-gold); font-size: 0.85rem"
+            ></i>
+            <a
+              href="mailto:atelier@stackly.com"
+              style="
+                color: inherit;
+                text-decoration: none;
+                transition: color 0.3s ease;
+              "
+              onmouseover="this.style.color = 'var(--accent-gold)'"
+              onmouseout="this.style.color = 'inherit'"
+              >atelier@stackly.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 STACKLY Atelier. All rights reserved. Premium Design
+          Experience.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
+    <script type="module">
+      import db from "./js/data.js";
+
+      let activeTag = "all";
+      let searchQuery = "";
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Sync login text
+        const user = db.getCurrentUser();
+        const loginBtn = document.getElementById("loginNavBtn");
+        if (loginBtn && user) {
+          loginBtn.textContent = "Dashboard";
+          loginBtn.setAttribute(
+            "href",
+            user.role === "admin"
+              ? "dashboard-admin.html"
+              : "dashboard-user.html",
+          );
+          loginBtn.classList.add("btn-cta");
+          loginBtn.classList.remove("btn-login");
+        }
+
+        // Render initial blogs
+        refreshBlogGrid();
+
+        // Search listeners
+        const search = document.getElementById("blogSearch");
+        if (search) {
+          search.addEventListener("input", (e) => {
+            searchQuery = e.target.value;
+            refreshBlogGrid();
+          });
+        }
+
+        // Tag pill clicks
+        const tags = document.querySelectorAll("#blogTagsWrapper .filter-btn");
+        tags.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            tags.forEach((t) => t.classList.remove("active"));
+            btn.classList.add("active");
+            activeTag = btn.getAttribute("data-tag");
+            refreshBlogGrid();
+          });
+        });
+
+        // Bind Highlight Card click
+        const featuredCard = document.getElementById("featuredPostCard");
+        if (featuredCard) {
+          const blogs = db
+            .getBlogs()
+            .sort((a, b) => new Date(b.date) - new Date(a.date));
+          const featured = blogs[0];
+
+          if (featured) {
+            featuredCard.innerHTML = `
+            <div style="height:350px;">
+              <img src="${featured.image}" alt="${featured.title}" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div style="padding:40px; display:flex; flex-direction:column; justify-content:center; gap:16px;">
+              <div class="blog-meta">
+                <span>By ${featured.author}</span>
+                <span>•</span>
+                <span>${featured.date}</span>
+                <span>•</span>
+                <span style="color:var(--accent-gold-dark); font-weight:600; text-transform:uppercase;">${featured.category}</span>
+              </div>
+              <h3 style="font-family:var(--font-heading); font-size:2rem; line-height:1.2; color:var(--text-primary);">${featured.title}</h3>
+              <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.5;">${featured.summary}</p>
+              <a href="404.html" style="font-weight:600; font-size:0.8125rem; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px; margin-top:10px; text-decoration:none;">Read Article &rarr;</a>
+            </div>
+          `;
+
+            featuredCard.addEventListener("click", () => {
+              window.location.href = "404.html";
+            });
+          }
+        }
+
+        // Newsletter
+        const form = document.getElementById("newsletterForm");
+        if (form) {
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Successfully Subscribed to Journal Digest!");
+            form.reset();
+          });
+        }
+      });
+
+      function refreshBlogGrid() {
+        const grid = document.getElementById("blogGrid");
+        if (!grid) return;
+
+        const blogs = db
+          .getBlogs()
+          .sort((a, b) => new Date(b.date) - new Date(a.date));
+        const featured = blogs[0];
+        const gridBlogs = featured
+          ? blogs.filter((post) => post.id !== featured.id)
+          : blogs;
+
+        const filtered = gridBlogs.filter((post) => {
+          const matchTag =
+            activeTag === "all" ||
+            post.category.toLowerCase() === activeTag.toLowerCase();
+          const matchSearch =
+            post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            post.summary.toLowerCase().includes(searchQuery.toLowerCase());
+          return matchTag && matchSearch;
+        });
+
+        const cardsHtml = filtered
+          .map(
+            (post) => `
+        <div class="card-luxury blog-post-card reveal active" data-id="${post.id}">
+          <div class="blog-post-media">
+            <img src="${post.image}" alt="${post.title}">
+          </div>
+          <div class="blog-post-info" style="padding: 24px; display: flex; flex-direction: column;">
+            <div class="blog-meta">
+              <span>By ${post.author}</span>
+              <span>•</span>
+              <span>${post.date}</span>
+              <span>•</span>
+              <span style="color: var(--accent-gold-dark); font-weight:600;">${post.category}</span>
+            </div>
+            <h3 class="blog-post-title" style="margin: 12px 0 16px 0;">${post.title}</h3>
+            <p class="blog-post-summary" style="margin-bottom: 16px;">${post.summary}</p>
+            <div style="margin-top: auto; padding-top: 10px;">
+              <a href="404.html" style="font-weight:600; font-size:0.8125rem; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">Read Article &rarr;</a>
+            </div>
+          </div>
+        </div>
+      `,
+          )
+          .join("");
+
+        grid.style.opacity = "0";
+        setTimeout(() => {
+          grid.innerHTML = cardsHtml.length
+            ? cardsHtml
+            : `<div style="grid-column: 1/-1; text-align:center; padding: 40px; color: var(--text-light);">No articles found matching search criteria.</div>`;
+          grid.style.opacity = "1";
+
+          // Bind Card Clicks
+          const cards = grid.querySelectorAll(".blog-post-card");
+          cards.forEach((card) => {
+            card.addEventListener("click", () => {
+              window.location.href = "404.html";
+            });
+          });
+        }, 200);
+      }
+
+
+    </script>
+  </body>
+</html>
+
