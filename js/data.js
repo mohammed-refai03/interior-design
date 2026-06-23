@@ -30,7 +30,7 @@ const DEFAULT_BLOGS = [
     date: "June 12, 2026",
     summary:
       "Learn how to combine leather, boucle, metals, and raw oak to create rich visual depth in neutral rooms.",
-    image: "./assets/images/blog-textures-layering.webp",
+    image: "../assets/images/blog-textures-layering.webp",
     content:
       '<p>Texturing is the secret weapon of high-end interior designers. When working with neutral color palettes, the absence of vibrant colors must be compensated by a tactile landscape.</p><blockquote>"Boucle fabric on a sofa, paired with a raw, wire-brushed oak coffee table and a brushed gold lamp, creates a sensory dialogue that makes a room feel complete."</blockquote><p>We recommend starting with the largest pieces first. For example, anchor your living room with a large textured wool rug. Add a smooth leather accent chair, then layer soft cushions in linen and boucle. This progression of tactile densities makes the room feel cozy yet curated.</p>',
   },
@@ -42,7 +42,7 @@ const DEFAULT_BLOGS = [
     date: "May 28, 2026",
     summary:
       "Discover space planning techniques, double-duty furniture layouts, and lighting styles for compact loft living.",
-    image: "./assets/images/blog-smallspaces.webp",
+    image: "../assets/images/blog-smallspaces.webp",
     content:
       "<p>Living in a compact urban apartment doesn't mean you have to sacrifice luxury or flow. Space planning is about creating zones and visual boundaries without erecting solid walls.</p><p>Use low-profile furniture to preserve sightlines and make ceilings feel taller. Double-duty items like storage benches or dining tables that double as workspaces are crucial. Additionally, placing mirrors opposite windows bounces natural light deep into the room, creating an illusion of open space.</p>",
   },
@@ -54,7 +54,7 @@ const DEFAULT_BLOGS = [
     date: "June 18, 2026",
     summary:
       "A deep dive into selecting and styling Italian marble slabs while maintaining environmental standards.",
-    image: "./assets/images/image-new-2.webp",
+    image: "../assets/images/image-new-2.webp",
     content:
       '<p>Carrara marble is the benchmark of interior luxury, but selecting it responsibly is as important as matching its vein lines. We work exclusively with certified quarries that operate with strict eco-restoration rules.</p><blockquote>"The natural grey veins of Carrara tell a story millions of years in the making. Let it speak by pairing it with simple, minimalist hardware."</blockquote><p>When selecting marble, look for slab cuts that offer continuous vein patterns (bookmatching) for high-impact walls or waterfall kitchen counters. Seal it with organic water-based sealers to prevent staining while avoiding VOC off-gassing.</p>',
   },
@@ -66,7 +66,7 @@ const DEFAULT_BLOGS = [
     date: "June 05, 2026",
     summary:
       "Learn how to position ambient, task, and accent lighting loops to highlight textures and spaces.",
-    image: "./assets/images/image-new-3.webp",
+    image: "../assets/images/image-new-3.webp",
     content:
       "<p>Lighting is the lifeblood of a room. Without proper illumination loops, even the most beautiful textures will look flat and lifeless. We recommend structuring lighting into three separate loops: ambient, task, and accent.</p><p>Ambient loop is your overhead soft lighting. Task loop focuses on specific areas (like a reading lamp by a chair). Accent loop is where the magic happens: routing hidden LED strips in wood valances or spotlighting structural columns. This multi-level approach gives you total control over the mood.</p>",
   },
@@ -78,7 +78,7 @@ const DEFAULT_BLOGS = [
     date: "May 15, 2026",
     summary:
       "How to integrate plants, natural lighting flows, and organic textures to improve corporate workspace energy.",
-    image: "./assets/images/image-new-4.webp",
+    image: "../assets/images/image-new-4.webp",
     content:
       "<p>Biophilic design is more than adding a potted fern in the corner of an office. It is the architectural integration of nature into the human workspace. Studies show that incorporating biophilic features reduces stress levels and boosts team output by 15%.</p><p>Start by maximizing perimeter window exposures so natural daylight streams deep into desks. Replace artificial room partition walls with open wireframes climbing with ivy or modular plant grids. Use raw timber textures and earth-toned acoustic felt panels to reduce echo while maintaining natural warmth.</p>",
   },
@@ -90,7 +90,7 @@ const DEFAULT_BLOGS = [
     date: "April 29, 2026",
     summary:
       "Discover how to blend warm teak wood panels with speckled terrazzo tiles for a retro-modern visual flow.",
-    image: "./assets/images/home-blog-theater.webp",
+    image: "../assets/images/home-blog-theater.webp",
     content:
       "<p>Blending mid-century wood tones with speckled stone yields a satisfying, tactile juxtaposition. The warm grain of teak offsets the cool, geometric terrazzo texture, bringing a sense of organic playfulness to luxury bathrooms and entryways.</p><p>We advise using terrazzo with warm beige or gold speckles to draw out the natural golden-brown highlights of teak panels. Keep adjacent walls solid off-white to let this texture dialogue take center stage without visual clutter.</p>",
   },
@@ -102,7 +102,7 @@ const DEFAULT_BLOGS = [
     date: "April 15, 2026",
     summary:
       "How to apply bamboo diffusers and sound dampening felt to design an acoustically perfect home theater.",
-    image: "./assets/images/image-new-5.webp",
+    image: "../assets/images/image-new-5.webp",
     content:
       "<p>Designing a high-fidelity home theater is as much about managing sound reflection as it is about screen resolution. Acoustic design is the science of preventing echoes while retaining the crisp details of speech and music.</p><p>We recommend starting with geometric acoustic wood diffusers. Placed on the rear wall, they scatter sound waves randomly, preventing the sound from bouncing directly back to your ears. Combine this with fabric-wrapped acoustic felt panels on the side walls to absorb high frequencies and eliminate secondary echoes.</p>",
   },
@@ -114,7 +114,7 @@ const DEFAULT_BLOGS = [
     date: "March 20, 2026",
     summary:
       "Discover how to balance cream, sand, and taupe hues with warm lighting loops to create cozy spaces.",
-    image: "./assets/images/image-new-7.webp",
+    image: "../assets/images/image-new-7.webp",
     content:
       "<p>Neutral spaces run the risk of feeling sterile and uninviting if the color balance is off. The secret to a successful neutral room is selecting tones with warm undertones rather than cool greys.</p><p>Cream, sand, and light taupe should form the base of your room. Introduce natural timber pieces like oak or teak to anchor the colors. Finally, structure your lighting loops so that they dim to warm temperatures (2700K or lower), which draws out the rich golden pigment in the paints and textiles.</p>",
   },
@@ -126,7 +126,7 @@ const DEFAULT_BLOGS = [
     date: "March 02, 2026",
     summary:
       "Vetting hardware loops and automated dimmers to integrate smart home technology seamlessly without visual clutter.",
-    image: "./assets/images/image-new-8.webp",
+    image: "../assets/images/image-new-8.webp",
     content:
       "<p>Modern luxury relies on technology, but a high-end space should never feel like a server room. Smart home features should be integrated into the architecture so they are completely invisible to the eye.</p><p>Use low-profile, screwless wall switches that match your wall finish. Place central hubs and routers inside custom ventilated cabinetry rather than leaving them exposed. Additionally, automate your window treatments and lighting loops through hidden central conduits, ensuring that technology serves the aesthetics of the room.</p>",
   },
@@ -138,7 +138,7 @@ const DEFAULT_BLOGS = [
     date: "February 14, 2026",
     summary:
       "Discover space planning guidelines to build flexible hot-desking zones and acoustic meeting booths.",
-    image: "./assets/images/image-new-9.webp",
+    image: "../assets/images/image-new-9.webp",
     content:
       "<p>The traditional corporate layout is changing. Today's workspaces need to support both collaborative sprints and deep, quiet individual focus. The layout must reflect this duality.</p><p>Establish active collaboration zones near perimeter window walls to leverage natural light and energy. Conversely, tuck private acoustic phone booths and quiet desk pods into the interior core of the building. Using felt partitions and warm wood cladding controls sound pollution and makes the workplace feel creative yet calm.</p>",
   },
@@ -151,7 +151,7 @@ const DEFAULT_PROJECTS = [
     category: "residential",
     summary:
       "A sleek, warm minimalist master bedroom featuring custom teak wall cladding, low-profile bed framing, and integrated LED backlight panels. The layout is optimized to offer a zen resting atmosphere.",
-    image: "./assets/images/image-new-14.webp",
+    image: "../assets/images/image-new-14.webp",
     client: "Eleanor Vance",
     budget: "$45,000",
     completionDate: "May 10, 2026",
@@ -163,7 +163,7 @@ const DEFAULT_PROJECTS = [
     category: "residential",
     summary:
       "A complete multi-floor villa renovation blending classic mid-century teak furniture configurations with modern open-concept space planning. Currently in the on-site carpentry phase.",
-    image: "./assets/images/portfolio-livingroom.webp",
+    image: "../assets/images/portfolio-livingroom.webp",
     client: "Eleanor Vance",
     budget: "$120,000",
     completionDate: "July 26, 2026 (Est.)",
@@ -175,7 +175,7 @@ const DEFAULT_PROJECTS = [
     category: "commercial",
     summary:
       "An immersive open-plan office layout designed to promote brand identity and workplace flexibility. Highlighting acoustic ceiling baffles and glass meeting spaces.",
-    image: "./assets/images/portfolio-office.webp",
+    image: "../assets/images/portfolio-office.webp",
     client: "Vanguard Corp",
     budget: "$250,000",
     completionDate: "April 18, 2026",
@@ -187,7 +187,7 @@ const DEFAULT_PROJECTS = [
     category: "commercial",
     summary:
       "A boutique commercial espresso bar highlighting custom brass wireframe details, raw concrete walls, and warm ambient spotlights designed to curate a luxury coffee lounge vibe.",
-    image: "./assets/images/portfolio-cafe.webp",
+    image: "../assets/images/portfolio-cafe.webp",
     client: "Aroma Hospitality",
     budget: "$65,000",
     completionDate: "June 02, 2026",
@@ -199,7 +199,7 @@ const DEFAULT_PROJECTS = [
     category: "residential",
     summary:
       "A luxury high-rise penthouse loft combining industrial brick accents with sleek modern walnut cabinetry, polished concrete floors, and double-height ceiling voids for maximum spatial depth.",
-    image: "./assets/images/portfolio-penthouse.webp",
+    image: "../assets/images/portfolio-penthouse.webp",
     client: "Dorian Sterling",
     budget: "$185,000",
     completionDate: "March 15, 2026",
@@ -211,7 +211,7 @@ const DEFAULT_PROJECTS = [
     category: "commercial",
     summary:
       "A state-of-the-art sensory relaxation spa environment focusing on organic curves, acoustic panel dampening, indirect warm illumination, and custom cedar-cladded relaxation capsules.",
-    image: "./assets/images/portfolio-wellness.webp",
+    image: "../assets/images/portfolio-wellness.webp",
     client: "Soma Wellness Corp",
     budget: "$310,000",
     completionDate: "December 20, 2025",
@@ -223,7 +223,7 @@ const DEFAULT_PROJECTS = [
     category: "residential",
     summary:
       "An eco-conscious smart home emphasizing biophilic layouts, indoor plant walls, local slate finishes, solar lighting loops, and an integrated central open atrium for natural ventilation.",
-    image: "./assets/images/portfolio-biophilic.webp",
+    image: "../assets/images/portfolio-biophilic.webp",
     client: "Oliver & Clara Finch",
     budget: "$145,000",
     completionDate: "August 10, 2026 (Est.)",
@@ -235,7 +235,7 @@ const DEFAULT_PROJECTS = [
     category: "commercial",
     summary:
       "A private high-fidelity listening lounge featuring acoustic soundproofing, bespoke walnut wood acoustic diffuser arrays, luxury velvet seating layouts, and low-glare ambient lighting designs.",
-    image: "./assets/images/portfolio-listening.webp",
+    image: "../assets/images/portfolio-listening.webp",
     client: "Binaural Records",
     budget: "$95,000",
     completionDate: "January 14, 2026",
@@ -246,7 +246,7 @@ const DEFAULT_PROJECTS = [
     category: "commercial",
     summary:
       "A state-of-the-art acoustic rehearsal studio designed for orchestral fidelity, integrating walnut wood diffusors and micro-perforated acoustic panel arrays.",
-    image: "./assets/images/project-symphony.webp",
+    image: "../assets/images/project-symphony.webp",
     client: "Orchestra Trust",
     budget: "$180,000",
     completionDate: "March 24, 2026",
@@ -258,7 +258,7 @@ const DEFAULT_PROJECTS = [
     category: "commercial",
     summary:
       "A private spa bathroom suite incorporating golden-veined terrazzo tile floors, custom teak storage panels, and vapor-proof ambient LED loops.",
-    image: "./assets/images/project-terrazzo-spa.webp",
+    image: "../assets/images/project-terrazzo-spa.webp",
     client: "Soma Wellness Corp",
     budget: "$75,000",
     completionDate: "January 10, 2026",
@@ -270,7 +270,7 @@ const DEFAULT_PROJECTS = [
     category: "residential",
     summary:
       "An extension conservatory featuring triple-glazed biophilic glass panels, micro-climate soil beds, and custom-milled white oak architectural frame trusses.",
-    image: "./assets/images/project-zen-conservatory.webp",
+    image: "../assets/images/project-zen-conservatory.webp",
     client: "Arthur & Maya Dent",
     budget: "$55,000",
     completionDate: "April 05, 2026",
@@ -282,7 +282,7 @@ const DEFAULT_PROJECTS = [
     category: "commercial",
     summary:
       "A modular, open-concept creative office styling showcasing steel frame doors, high-density acoustic partition screens, and custom task spotlight rings.",
-    image: "./assets/images/image-new-14.webp",
+    image: "../assets/images/image-new-14.webp",
     client: "Apex Creative Agency",
     budget: "$140,000",
     completionDate: "June 15, 2026",
