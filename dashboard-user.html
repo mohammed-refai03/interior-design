@@ -130,7 +130,7 @@
         <div class="sidebar-avatar-circle" id="sidebarAvatar" style="background-color: var(--accent-gold); color: var(--text-white); font-weight: 700; width: 38px; height: 38px; font-size: 0.8125rem;">R</div>
         <div style="overflow:hidden;">
           <span style="font-weight:600; font-size:0.8125rem; display:block; color:var(--text-primary); text-overflow:ellipsis; overflow:hidden; white-space:nowrap;" id="sidebarName">Admin Profile Anchor</span>
-          <span style="font-size:0.6875rem; color:var(--text-light); display:block; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;" id="sidebarRole">s@gmail.com</span>
+          <span style="font-size:0.6875rem; color:var(--text-light); display:block; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;" id="sidebarEmail">s@gmail.com</span>
         </div>
       </div>
       
@@ -868,63 +868,7 @@
           </div>
 
           <!-- Logistics table -->
-          <div class="card-luxury" style="padding:24px; margin-top:12px;">
-            <h3 style="font-family:var(--font-heading); font-size:1.25rem; margin-bottom:16px; text-transform:uppercase; letter-spacing:0.5px;">Sourcing Logistics & Shipping Ledger</h3>
-            <table class="db-table">
-              <thead>
-                <tr>
-                  <th>Finish Name</th>
-                  <th>Category</th>
-                  <th>Sourcing Partner</th>
-                  <th>Sample Status</th>
-                  <th>Project Location</th>
-                  <th>Estimated Delivery / ETA</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="font-weight:600;">Oiled Teak Cladding</td>
-                  <td>Hardwood</td>
-                  <td>Nordic Timber Co.</td>
-                  <td><span class="badge success">Delivered</span></td>
-                  <td>Master Bedroom Feature Wall</td>
-                  <td>On Site (Carpentry installation)</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:600;">Calacatta Gold Marble</td>
-                  <td>Stone & Tile</td>
-                  <td>Apuan Alps Quarry</td>
-                  <td><span class="badge success">Delivered</span></td>
-                  <td>Master Bathroom Ensuite Floor</td>
-                  <td>In Transit (Due June 24)</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:600;">Brushed Brass Fixtures</td>
-                  <td>Metal Hardware</td>
-                  <td>Buster + Punch Ltd.</td>
-                  <td><span class="badge success">Delivered</span></td>
-                  <td>Kitchen & Bathroom Fittings</td>
-                  <td>Sourced & Secured (Stockroom)</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:600;">Acoustic Felt Panels</td>
-                  <td>Textile / Ceiling</td>
-                  <td>Kvadrat Acoustics</td>
-                  <td><span class="badge pending">Awaiting Dispatch</span></td>
-                  <td>Media Room & Study Ceilings</td>
-                  <td>June 28 (Est.)</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:600;">Aniline Leather Trim</td>
-                  <td>Leather Hide</td>
-                  <td>Sorensen Leather</td>
-                  <td><span class="badge info" style="background-color:rgba(197,168,128,0.12); color:var(--accent-gold-dark);">Dispatched</span></td>
-                  <td>Living Room Custom Credenza</td>
-                  <td>June 22 (Est.)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+         
         </div>
 
         <!-- ATELIER TEAM SECTION -->
@@ -1207,7 +1151,12 @@
           if (topbarTitle) {
             topbarTitle.textContent = item.querySelector("span").textContent;
           }
-          
+
+          // Scroll content back to top on section switch
+          const dbContent = document.querySelector(".db-content");
+          if (dbContent) dbContent.scrollTop = 0;
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+
           // Re-trigger layout render for canvases
           setTimeout(refreshCharts, 50);
         });
